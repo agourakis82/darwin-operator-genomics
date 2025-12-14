@@ -2,6 +2,11 @@ using Test
 using DarwinOperatorGenomics
 using BioSequences
 
+# Include binary dihedral module
+include(joinpath(@__DIR__, "..", "src", "BinaryDihedral.jl"))
+using .BinaryDihedral
+using Rotations
+
 @testset "DarwinOperatorGenomics" begin
 
     @testset "Basic Operators" begin
@@ -265,6 +270,140 @@ using BioSequences
         @test 1 <= stats.orbit_size <= 16
         @test stats.is_palindrome == is_fixed_under_reverse(seq)
         @test stats.is_rc_fixed == is_fixed_under_rc(seq)
+    end
+
+end
+
+@testset "BinaryDihedral (Dicyclic Group)" begin
+
+    @testset "Group structure" begin
+        g = DicyclicGroup(4)  # Dic_4, lifts D_4
+
+        @testset "Generator orders" begin
+            # a has order 2n = 8
+            a = dicyclic_element(g, 1, false)
+            a8 = a
+            for _ in 2:8
+                a8 = a8 * a
+            end
+            # a^8 should be identity (up to numerical precision)
+            @test isapprox(a8.q.s, 1.0, atol=1e-10)
+            @test isapprox(a8.q.v1, 0.0, atol=1e-10)
+            @test isapprox(a8.q.v2, 0.0, atol=1e-10)
+            @test isapprox(a8.q.v3, 0.0, atol=1e-10)
+        end
+
+        @testset "b^2 = a^n relation" begin
+            b = dicyclic_element(g, 0, true)  # b
+            b2 = b * b
+            an = dicyclic_element(g, g.n, false)  # a^n
+
+            # b^2 = a^n (both equal -1 in quaternions)
+            @test isapprox(b2.q.s, an.q.s, atol=1e-10)
+            @test isapprox(b2.q.v1, an.q.v1, atol=1e-10)
+            @test isapprox(b2.q.v2, an.q.v2, atol=1e-10)
+            @test isapprox(b2.q.v3, an.q.v3, atol=1e-10)
+        end
+
+        @testset "Group has 4n elements" begin
+            elements = BinaryDihedral.all_elements(g)
+            @test length(elements) == 4 * g.n
+        end
+    end
+
+    @testset "Double cover property" begin
+        for n in [3, 4, 5, 6]
+            g = DicyclicGroup(n)
+            @test test_double_cover(g)
+        end
+    end
+
+    @testset "Projection to dihedral" begin
+        g = DicyclicGroup(6)
+
+        @testset "q and -q project to same element" begin
+            q = dicyclic_element(g, 3, false)
+            neg_q = QuatRotation(-q.q.s, -q.q.v1, -q.q.v2, -q.q.v3)
+
+            proj1 = project_to_dihedral(q, g)
+            proj2 = project_to_dihedral(neg_q, g)
+
+            @test proj1 == proj2
+        end
+
+        @testset "Rotation elements" begin
+            # Pure rotation a^k should project to (k mod n, false)
+            for k in 0:5
+                q = dicyclic_element(g, k, false)
+                proj_k, is_ref = project_to_dihedral(q, g)
+                @test is_ref == false
+                @test proj_k == mod(k, g.n)
+            end
+        end
+
+        @testset "Reflection elements" begin
+            # b·a^k should project to (k mod n, true)
+            for k in 0:5
+                q = dicyclic_element(g, k, true)
+                proj_k, is_ref = project_to_dihedral(q, g)
+                @test is_ref == true
+            end
+        end
+    end
+
+    @testset "Lift from dihedral" begin
+        g = DicyclicGroup(5)
+
+        @testset "Round-trip consistency" begin
+            for k in 0:4
+                for is_ref in [false, true]
+                    # Lift then project
+                    q = dihedral_to_dicyclic(k, is_ref, g)
+                    proj_k, proj_ref = project_to_dihedral(q, g)
+
+                    @test proj_k == k
+                    @test proj_ref == is_ref
+                end
+            end
+        end
+    end
+
+    @testset "Operator chain encoding" begin
+        n = 8  # For length-8 sequences
+
+        @testset "Identity chain" begin
+            ops = Symbol[:id, :id]
+            states = encode_operator_chain(ops, n)
+            @test length(states) == 3  # Initial + 2 ops
+
+            # All states should be identity
+            for s in states
+                @test isapprox(s.q.s, 1.0, atol=1e-10)
+            end
+        end
+
+        @testset "Shift chain" begin
+            ops = Symbol[:S, :S, :S]
+            states = encode_operator_chain(ops, n)
+            @test length(states) == 4
+        end
+
+        @testset "Reverse chain" begin
+            ops = Symbol[:R, :R]  # R∘R = id
+            len = chain_length_dihedral(ops, n)
+            @test len == 0  # Should reduce to identity
+        end
+
+        @testset "Chain length computation" begin
+            # Single shift
+            @test chain_length_dihedral([:S], n) == 1
+
+            # Single reverse
+            @test chain_length_dihedral([:R], n) == 1
+
+            # S∘R (shift then reverse)
+            @test chain_length_dihedral([:S, :R], n) >= 1
+        end
     end
 
 end

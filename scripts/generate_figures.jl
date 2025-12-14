@@ -124,6 +124,7 @@ function generate_fig2_symmetry_stats(results_dir::String, out_dir::String, form
     # Load data
     window_stats_path = joinpath(results_dir, "tables", "window_stats.csv")
     replicon_stats_path = joinpath(results_dir, "tables", "replicon_stats.csv")
+    approx_stats_path = joinpath(results_dir, "tables", "approx_symmetry_stats.csv")
 
     if !isfile(window_stats_path)
         @warn "Window stats not found: $window_stats_path"
@@ -132,10 +133,11 @@ function generate_fig2_symmetry_stats(results_dir::String, out_dir::String, form
 
     window_df = CSV.read(window_stats_path, DataFrame)
     replicon_df = isfile(replicon_stats_path) ? CSV.read(replicon_stats_path, DataFrame) : nothing
+    approx_df = isfile(approx_stats_path) ? CSV.read(approx_stats_path, DataFrame) : nothing
 
-    fig = Figure(size=(1000, 800), fontsize=12)
+    fig = Figure(size=(1200, 1000), fontsize=12)
 
-    Label(fig[0, 1:2], "Dihedral Symmetry Statistics in Bacterial Genomes", fontsize=18, font=:bold)
+    Label(fig[0, 1:3], "Dihedral Symmetry Analysis in Bacterial Genomes", fontsize=18, font=:bold)
 
     # Panel A: Orbit ratio distribution
     ax1 = Axis(fig[1, 1],
@@ -174,11 +176,11 @@ function generate_fig2_symmetry_stats(results_dir::String, out_dir::String, form
         ax2.xticks = (1:length(types), types)
     end
 
-    # Panel C: Fixed point incidence
+    # Panel C: Exact fixed point incidence (expected ~0 under null)
     ax3 = Axis(fig[2, 1],
-        xlabel="Fixed Point Type",
+        xlabel="Exact Invariance Type",
         ylabel="Fraction of Windows",
-        title="(C) Fixed Point Incidence")
+        title="(C) Exact Fixed Points (Expected ≈ 0)")
 
     if nrow(window_df) > 0
         pal_frac = mean(window_df.is_palindrome)
@@ -217,6 +219,51 @@ function generate_fig2_symmetry_stats(results_dir::String, out_dir::String, form
         end
 
         axislegend(ax4, position=:rb)
+    end
+
+    # Panel E: Approximate symmetry (d_min/L) across window sizes
+    ax5 = Axis(fig[3, 1:2],
+        xlabel="Window Size (bp)",
+        ylabel="d_min / L (Normalized Distance)",
+        title="(E) Approximate Dihedral Self-Similarity: Real vs Shuffled Baseline")
+
+    if approx_df !== nothing && nrow(approx_df) > 0
+        window_sizes = sort(unique(approx_df.window_size))
+
+        # Compute means and stds for each window size
+        real_means = Float64[]
+        real_stds = Float64[]
+        shuf_means = Float64[]
+        shuf_stds = Float64[]
+
+        for L in window_sizes
+            subset = filter(row -> row.window_size == L, approx_df)
+            push!(real_means, mean(subset.d_min_normalized_real))
+            push!(real_stds, std(subset.d_min_normalized_real))
+            push!(shuf_means, mean(subset.d_min_normalized_shuffled))
+            push!(shuf_stds, std(subset.d_min_normalized_shuffled))
+        end
+
+        # Plot with error bands
+        x_pos = 1:length(window_sizes)
+
+        # Real sequences
+        band!(ax5, x_pos, real_means .- real_stds, real_means .+ real_stds,
+            color=(:steelblue, 0.3))
+        scatterlines!(ax5, x_pos, real_means,
+            color=:steelblue, linewidth=2, markersize=10, label="Real genomes")
+
+        # Shuffled baseline
+        band!(ax5, x_pos, shuf_means .- shuf_stds, shuf_means .+ shuf_stds,
+            color=(:orange, 0.3))
+        scatterlines!(ax5, x_pos, shuf_means,
+            color=:orange, linewidth=2, markersize=10, linestyle=:dash, label="GC-shuffled")
+
+        ax5.xticks = (x_pos, string.(window_sizes))
+        axislegend(ax5, position=:rt)
+    else
+        text!(ax5, 0.5, 0.5, text="Run analyze_approx_symmetry.jl first",
+            align=(:center, :center), fontsize=14)
     end
 
     filepath = joinpath(out_dir, "fig2_symmetry_stats.$format")

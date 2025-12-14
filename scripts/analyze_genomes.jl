@@ -344,16 +344,21 @@ function main()
 ### Overall Statistics
 
 - **Mean orbit ratio** (orbit_size / 2n): $(round(mean_orbit_ratio, digits=4)) ± $(round(std_orbit_ratio, digits=4))
-- **Palindrome fraction**: $(round(pal_frac * 100, digits=2))%
-- **RC-fixed fraction**: $(round(rc_frac * 100, digits=2))%
+- **Palindrome (R-fixed) fraction**: $(round(pal_frac * 100, digits=4))%
+- **RC-fixed fraction**: $(round(rc_frac * 100, digits=4))%
 
 ### Interpretation
 
-An orbit ratio near 1.0 indicates the sequence has no dihedral symmetry (all rotations and reflections produce distinct sequences). Values < 1.0 indicate symmetry.
+**Orbit ratio = 1.0** indicates *maximal orbit size* (no exact dihedral invariance): all 2n
+group elements {S^k, R∘S^k} produce distinct sequences. This is the **expected null** for
+random or typical genomic sequences at kilobase scales.
 
-- Orbit ratio ≈ 1.0: No detectable symmetry at this window size
-- Palindrome fraction: Proportion of windows that read the same forwards and backwards
-- RC-fixed fraction: Proportion of windows equal to their reverse complement
+**Fixed-point rate ≈ 0%** confirms absence of exact palindromes (R-fixed) or exact
+reverse-complement palindromes (RC-fixed) at this window size—again expected under
+random sequence models.
+
+These results do **not** imply "no dihedral structure"; they confirm that exact invariance
+is absent, which motivates the approximate self-similarity analysis (d_min metric).
 
 """
 

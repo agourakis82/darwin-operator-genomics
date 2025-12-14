@@ -1,0 +1,30 @@
+{
+  "title": "Darwin Operator Genomics: Operator Algebras for Genomic Evolution",
+  "description": "A computational framework for analyzing genomic sequences through operator algebras, focusing on the dihedral group structure of circular bacterial chromosomes. Implements operators including cyclic shift (S), reverse (R), complement (K), reverse-complement (RC), point mutations (M), and indels (D, I). Includes binary dihedral (dicyclic) group representation as quaternionic embedding.",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Agourakis, Demetrios Chiuratto",
+      "affiliation": "Independent Researcher",
+      "orcid": ""
+    }
+  ],
+  "keywords": [
+    "genomics",
+    "operator algebra",
+    "quaternions",
+    "bacterial genomes",
+    "dihedral symmetry",
+    "dicyclic group",
+    "computational biology",
+    "Julia"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/agourakis82/darwin-operator-genomics"
+    }
+  ],
+  "notes": "Accompanying code for: The Quaternionic Syntax of Existence: Operator Algebras for Genomic Evolution"
+}

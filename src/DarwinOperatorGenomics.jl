@@ -11,6 +11,8 @@ export
     # Canonicalization
     canonical_rep, orbit_size, is_fixed_under_reverse, is_fixed_under_rc,
     has_shift_symmetry,
+    # Approximate symmetry
+    min_dihedral_distance, hamming_distance, gc_shuffle,
     # Analysis
     compute_symmetry_stats, SymmetryStats,
     # Types
@@ -214,6 +216,82 @@ function has_shift_symmetry(seq::LongDNA)
         end
     end
     return (false, n)
+end
+
+# =============================================================================
+# Approximate Symmetry (d_min metric)
+# =============================================================================
+
+"""
+    hamming_distance(a::LongDNA, b::LongDNA) -> Int
+
+Count number of positions where sequences differ.
+Sequences must have equal length.
+"""
+function hamming_distance(a::LongDNA, b::LongDNA)
+    @assert length(a) == length(b) "Sequences must have equal length"
+    d = 0
+    for i in 1:length(a)
+        if a[i] != b[i]
+            d += 1
+        end
+    end
+    return d
+end
+
+"""
+    min_dihedral_distance(seq::LongDNA; include_rc::Bool=true) -> Int
+
+Compute minimum Hamming distance to any non-identity dihedral transform.
+d_min(w) = min over g ∈ {S^k, R∘S^k} \\ {id} of Hamming(w, g(w))
+
+If include_rc=true, also includes RC∘S^k transforms.
+
+Returns d_min as integer; divide by length(seq) for normalized distance.
+"""
+function min_dihedral_distance(seq::LongDNA; include_rc::Bool=true)
+    n = length(seq)
+    n == 0 && return 0
+
+    d_min = n  # Initialize to max possible
+    rev = reverse_seq(seq)
+
+    # Check all shifts (excluding k=0 which is identity)
+    for k in 1:n-1
+        shifted = shift(seq, k)
+        d = hamming_distance(seq, shifted)
+        d_min = min(d_min, d)
+    end
+
+    # Check all reverse-shifts (including k=0)
+    for k in 0:n-1
+        shifted_rev = shift(rev, k)
+        d = hamming_distance(seq, shifted_rev)
+        d_min = min(d_min, d)
+    end
+
+    # Optionally check reverse-complement shifts
+    if include_rc
+        rc = rev_comp(seq)
+        for k in 0:n-1
+            shifted_rc = shift(rc, k)
+            d = hamming_distance(seq, shifted_rc)
+            d_min = min(d_min, d)
+        end
+    end
+
+    return d_min
+end
+
+"""
+    gc_shuffle(seq::LongDNA; rng=Random.GLOBAL_RNG) -> LongDNA
+
+GC-preserving shuffle: randomly permute bases while preserving composition.
+"""
+function gc_shuffle(seq::LongDNA; rng=Random.GLOBAL_RNG)
+    bases = collect(seq)
+    shuffle!(rng, bases)
+    return LongDNA{4}(bases)
 end
 
 # =============================================================================
