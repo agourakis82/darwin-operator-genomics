@@ -21,6 +21,10 @@ using HypothesisTests
 
 using DarwinOperatorGenomics
 
+# Load GPU module (with optional CUDA support)
+include(joinpath(@__DIR__, "..", "src", "gpu", "ApproximateSymmetryCUDA.jl"))
+using .ApproximateSymmetryCUDA
+
 function parse_args()
     s = ArgParseSettings(
         description = "Analyze approximate dihedral symmetry",
@@ -48,6 +52,10 @@ function parse_args()
             help = "Random seed"
             arg_type = Int
             default = 42
+        "--backend", "-b"
+            help = "Computation backend: cpu or cuda"
+            arg_type = String
+            default = "cpu"
     end
 
     return ArgParse.parse_args(s)
@@ -81,7 +89,7 @@ end
 """
 Sample windows and compute d_min/L for real and shuffled sequences.
 """
-function analyze_windows(seq::LongDNA, window_sizes::Vector{Int}, n_samples::Int; rng=nothing)
+function analyze_windows(seq::LongDNA, window_sizes::Vector{Int}, n_samples::Int; rng=nothing, backend::String="cpu")
     if rng === nothing
         rng = MersenneTwister(42)
     end
@@ -104,11 +112,23 @@ function analyze_windows(seq::LongDNA, window_sizes::Vector{Int}, n_samples::Int
             window = seq[pos:pos+L-1]
 
             # Real sequence d_min
-            d_real = min_dihedral_distance(window; include_rc=true)
+            if backend == "cuda"
+                # Use GPU-accelerated version (batches for efficiency)
+                d_real_vec = dmin_gpu([window]; backend="cuda", include_rc=true)
+                d_real = d_real_vec[1]
+            else
+                # Use CPU version (original or fallback)
+                d_real = min_dihedral_distance(window; include_rc=true)
+            end
 
             # Shuffled baseline
             shuffled = gc_shuffle(window; rng=rng)
-            d_shuffled = min_dihedral_distance(shuffled; include_rc=true)
+            if backend == "cuda"
+                d_shuffled_vec = dmin_gpu([shuffled]; backend="cuda", include_rc=true)
+                d_shuffled = d_shuffled_vec[1]
+            else
+                d_shuffled = min_dihedral_distance(shuffled; include_rc=true)
+            end
 
             push!(results, (L, d_real / L, d_shuffled / L))
         end
@@ -125,6 +145,12 @@ function main()
     window_sizes = parse.(Int, split(args["windows"], ","))
     n_samples = args["samples-per-size"]
     seed = args["seed"]
+    backend = args["backend"]
+
+    # Validate backend
+    if !(backend in ["cpu", "cuda"])
+        error("Invalid backend: $backend. Must be 'cpu' or 'cuda'.")
+    end
 
     rng = MersenneTwister(seed)
 
@@ -134,6 +160,7 @@ function main()
     println("\n=== Approximate Symmetry Analysis ===")
     println("Window sizes: $window_sizes")
     println("Samples per size per genome: $n_samples")
+    println("Backend: $backend" * (backend == "cuda" && !has_cuda() ? " (CUDA unavailable, falling back to CPU)" : ""))
 
     manifest = load_manifest(cache_dir)
     println("Found $(length(manifest)) genomes")
@@ -154,7 +181,7 @@ function main()
             sequences = read_fasta_gz(filepath)
             for (name, seq) in sequences
                 length(seq) < maximum(window_sizes) * 2 && continue
-                df = analyze_windows(seq, window_sizes, n_samples; rng=rng)
+                df = analyze_windows(seq, window_sizes, n_samples; rng=rng, backend=backend)
                 append!(all_results, df)
             end
         catch e
