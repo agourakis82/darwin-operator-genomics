@@ -8,3 +8,455 @@ GCF_011106775.1,Klebsiella pneumoniae,NZ_CP040036.1,unknown,65499,1.0,0.0,0.0,0.
 GCF_011106775.1,Klebsiella pneumoniae,NZ_CP040034.1,unknown,176345,1.0,0.0,0.0,0.0
 GCF_011106775.1,Klebsiella pneumoniae,NZ_CP040035.1,unknown,148625,1.0,0.0,0.0,0.0
 GCF_011106775.1,Klebsiella pneumoniae,NZ_CP040037.1,unknown,4938,1.0,0.0,0.0,0.0
+GCF_045924105.1,Enterococcus faecium,NZ_CP161863.1,unknown,2533916,1.0,0.0,0.0,0.0
+GCF_045924105.1,Enterococcus faecium,NZ_CP161864.1,unknown,175811,1.0,0.0,0.0,0.0
+GCF_045924105.1,Enterococcus faecium,NZ_CP161865.1,unknown,55596,1.0,0.0,0.0,0.0
+GCF_045924105.1,Enterococcus faecium,NZ_CP161866.1,unknown,24681,1.0,0.0,0.0,0.0
+GCF_052487945.1,Zobellella sp. An-6,NZ_CP199259.1,unknown,4236333,1.0,0.0,0.0,0.0
+GCF_977065475.1,Escherichia coli,NZ_OZ369465.1,unknown,5156475,1.0,0.0,0.0,0.0
+GCF_977065475.1,Escherichia coli,NZ_OZ369466.1,unknown,106011,1.0,0.0,0.0,0.0
+GCF_977065475.1,Escherichia coli,NZ_OZ369467.1,unknown,90638,1.0,0.0,0.0,0.0
+GCF_977065475.1,Escherichia coli,NZ_OZ369468.1,unknown,89716,1.0,0.0,0.0,0.0
+GCF_977065475.1,Escherichia coli,NZ_OZ369469.1,unknown,9373,1.0,0.0,0.0,0.0
+GCF_008124045.1,Acinetobacter baumannii,NZ_CP043180.1,unknown,3843574,1.0,0.0,0.0,0.0
+GCF_035323845.1,Enterobacter hormaechei,NZ_CP139334.1,unknown,4590323,1.0,0.0,0.0,0.0
+GCF_035323845.1,Enterobacter hormaechei,NZ_CP139333.1,unknown,64312,1.0,0.0,0.0,0.0
+GCF_021052345.1,Rhizobium sp. SU303,NZ_CP088095.1,unknown,5012391,1.0,0.0,0.0,0.0
+GCF_021052345.1,Rhizobium sp. SU303,NZ_CP088096.1,unknown,938151,1.0,0.0,0.0,0.0
+GCF_021052345.1,Rhizobium sp. SU303,NZ_CP088097.1,unknown,529550,1.0,0.0,0.0,0.0
+GCF_021052345.1,Rhizobium sp. SU303,NZ_CP088098.1,unknown,333186,1.0,0.0,0.0,0.0
+GCF_021052345.1,Rhizobium sp. SU303,NZ_CP088099.1,unknown,261567,1.0,0.0,0.0,0.0
+GCF_053338875.1,Salmonella enterica subsp. enterica serovar Corvallis,NZ_CP175687.1,unknown,4886585,1.0,0.0,0.0,0.0
+GCF_053338875.1,Salmonella enterica subsp. enterica serovar Corvallis,NZ_CP175688.1,unknown,111842,1.0,0.0,0.0,0.0
+GCF_053338875.1,Salmonella enterica subsp. enterica serovar Corvallis,NZ_CP175689.1,unknown,2552,1.0,0.0,0.0,0.0
+GCF_053338875.1,Salmonella enterica subsp. enterica serovar Corvallis,NZ_CP175690.1,unknown,2442,1.0,0.0,0.0,0.0
+GCF_011302915.1,Thermomonas sp. HDW16,NZ_CP049872.1,unknown,2795589,1.0,0.0,0.0,0.0
+GCF_018603395.1,Clostridioides difficile,NZ_CP075684.1,unknown,3998618,1.0,0.0,0.0,0.0
+GCF_051013815.1,Erwinia aphidicola,NZ_CP142228.1,unknown,4496733,1.0,0.0,0.0,0.0
+GCF_051013815.1,Erwinia aphidicola,NZ_CP142229.1,unknown,12515,1.0,0.0,0.0,0.0
+GCF_963575375.1,Escherichia coli,NZ_OY754371.1,unknown,5345520,1.0,0.0,0.0,0.0
+GCF_963575375.1,Escherichia coli,NZ_OY754372.1,unknown,103455,1.0,0.0,0.0,0.0
+GCF_963575375.1,Escherichia coli,NZ_OY754373.1,unknown,94035,1.0,0.0,0.0,0.0
+GCF_963575375.1,Escherichia coli,NZ_OY754374.1,unknown,76451,1.0,0.0,0.0,0.0
+GCF_963575375.1,Escherichia coli,NZ_OY754375.1,unknown,3082,1.0,0.0,0.0,0.0
+GCF_963575375.1,Escherichia coli,NZ_OY754376.1,unknown,2442,1.0,0.0,0.0,0.0
+GCF_008375335.1,Escherichia coli,NZ_CP041627.1,unknown,4790657,1.0,0.0,0.0,0.0
+GCF_021491715.1,Staphylococcus aureus,NZ_CP090870.1,unknown,2782272,1.0,0.0,0.0,0.0
+GCF_900638215.1,Nocardiopsis dassonvillei,NZ_LR134501.1,unknown,6541269,1.0,0.0,0.0,0.0
+GCF_002557815.1,Listeria monocytogenes,NZ_CP023754.1,unknown,3027995,1.0,0.0,0.0,0.0
+GCF_024749385.1,Acinetobacter baumannii,NZ_CP087304.1,unknown,4012228,1.0,0.0,0.0,0.0
+GCF_024749385.1,Acinetobacter baumannii,NZ_CP087306.1,unknown,8731,1.0,0.0,0.0,0.0
+GCF_024749385.1,Acinetobacter baumannii,NZ_CP087307.1,unknown,2359,1.0,0.0,0.0,0.0
+GCF_024749385.1,Acinetobacter baumannii,NZ_CP087305.1,unknown,9083,1.0,0.0,0.0,0.0
+GCF_024749385.1,Acinetobacter baumannii,NZ_CP087308.1,unknown,2097,1.0,0.0,0.0,0.0
+GCF_030440475.1,Porphyromonas gingivalis,NZ_CP098924.1,unknown,2515718,1.0,0.0,0.0,0.0
+GCF_024126355.1,Pseudomonas aeruginosa,NZ_CP099797.1,unknown,6217942,1.0,0.0,0.0,0.0
+GCF_008124185.1,Escherichia coli O16:H48,NZ_CP043191.1,unknown,4656753,1.0,0.0,0.0,0.0
+GCF_008124185.1,Escherichia coli O16:H48,NZ_CP043192.1,unknown,165649,1.0,0.0,0.0,0.0
+GCF_965230075.1,Maridesulfovibrio sp.,NZ_OZ245945.1,unknown,4652121,1.0,0.0,0.0,0.0
+GCF_004006235.1,Agromyces sp. LHK192,NZ_CP034753.1,unknown,4088319,1.0,0.0,0.0,0.0
+GCF_045709885.1,Xanthomonas campestris pv. campestris,NZ_CP155934.1,unknown,5044828,1.0,0.0,0.0,0.0
+GCF_023066825.1,Pseudomonas aeruginosa,NZ_CP090647.1,unknown,6549122,1.0,0.0,0.0,0.0
+GCF_037640115.1,Campylobacter jejuni,NZ_CP148175.1,unknown,1651184,1.0,0.0,0.0,0.0
+GCF_023958495.2,Pseudomonas aeruginosa,NZ_CP113532.1,unknown,6432043,1.0,0.0,0.0,0.0
+GCF_019342945.1,Streptococcus pyogenes,NZ_CP049690.1,unknown,1866583,1.0,0.0,0.0,0.0
+GCF_025996075.1,Escherichia coli,NZ_AP026106.1,unknown,5324174,1.0,0.0,0.0,0.0
+GCF_025996075.1,Escherichia coli,NZ_AP026107.1,unknown,83529,1.0,0.0,0.0,0.0
+GCF_018279185.1,Klebsiella pneumoniae,NZ_CP047595.1,unknown,5331308,1.0,0.0,0.0,0.0
+GCF_018279185.1,Klebsiella pneumoniae,NZ_CP047597.1,unknown,70307,1.0,0.0,0.0,0.0
+GCF_018279185.1,Klebsiella pneumoniae,NZ_CP047596.1,unknown,192347,1.0,0.0,0.0,0.0
+GCF_049930715.1,Lacticaseibacillus paracasei,NZ_CP186551.1,unknown,3110432,1.0,0.0,0.0,0.0
+GCF_023078415.1,Limosilactobacillus reuteri,NZ_CP095735.1,unknown,1972516,1.0,0.0,0.0,0.0
+GCF_016026415.1,Corynebacterium amycolatum,NZ_CP065628.1,unknown,2802624,1.0,0.0,0.0,0.0
+GCF_940677205.1,[Clostridium] colinum,NZ_OW712331.1,unknown,2035557,1.0,0.0,0.0,0.0
+GCF_050883685.1,Enterobacter hormaechei,NZ_CP175732.1,unknown,4977376,1.0,0.0,0.0,0.0
+GCF_050883685.1,Enterobacter hormaechei,NZ_CP175733.1,unknown,309378,1.0,0.0,0.0,0.0
+GCF_050883685.1,Enterobacter hormaechei,NZ_CP175734.1,unknown,49894,1.0,0.0,0.0,0.0
+GCF_024138795.1,Proteus mirabilis,NZ_CP071773.1,unknown,3833071,1.0,0.0,0.0,0.0
+GCF_024138795.1,Proteus mirabilis,NZ_CP071774.1,unknown,4875,1.0,0.0,0.0,0.0
+GCF_024138795.1,Proteus mirabilis,NZ_CP071775.1,unknown,2683,1.0,0.0,0.0,0.0
+GCF_024138795.1,Proteus mirabilis,NZ_CP071776.1,unknown,2259,1.0,0.0,0.0,0.0
+GCF_020883495.1,Shinella zoogloeoides,NZ_CP086610.1,unknown,3991891,1.0,0.0,0.0,0.0
+GCF_020883495.1,Shinella zoogloeoides,NZ_CP086611.1,unknown,372552,1.0,0.0,0.0,0.0
+GCF_020883495.1,Shinella zoogloeoides,NZ_CP086612.1,unknown,340407,1.0,0.0,0.0,0.0
+GCF_020883495.1,Shinella zoogloeoides,NZ_CP086613.1,unknown,108510,1.0,0.0,0.0,0.0
+GCF_020883495.1,Shinella zoogloeoides,NZ_CP086614.1,unknown,34705,1.0,0.0,0.0,0.0
+GCF_050216475.1,Proteus mirabilis,NZ_CP189756.1,unknown,4081391,1.0,0.0,0.0,0.0
+GCF_027474865.2,Streptococcus gallolyticus,NZ_CP113954.2,unknown,2392629,1.0,0.0,0.0,0.0
+GCF_013635015.1,Klebsiella grimontii,NZ_CP058180.1,unknown,5992775,1.0,0.0,0.0,0.0
+GCF_013635015.1,Klebsiella grimontii,NZ_CP058181.1,unknown,133995,1.0,0.0,0.0,0.0
+GCF_013635015.1,Klebsiella grimontii,NZ_CP058182.1,unknown,103340,1.0,0.0,0.0,0.0
+GCF_013635015.1,Klebsiella grimontii,NZ_CP058183.1,unknown,95921,1.0,0.0,0.0,0.0
+GCF_013635015.1,Klebsiella grimontii,NZ_CP058184.1,unknown,67313,1.0,0.0,0.0,0.0
+GCF_013635015.1,Klebsiella grimontii,NZ_CP058185.1,unknown,3514,1.0,0.0,0.0,0.0
+GCF_013635015.1,Klebsiella grimontii,NZ_CP058186.1,unknown,3294,1.0,0.0,0.0,0.0
+GCF_041463595.1,Xanthomonas axonopodis pv. cyamopsidis,NZ_CP167209.1,unknown,4861185,1.0,0.0,0.0,0.0
+GCF_041463595.1,Xanthomonas axonopodis pv. cyamopsidis,NZ_CP167210.1,unknown,120567,1.0,0.0,0.0,0.0
+GCF_041463595.1,Xanthomonas axonopodis pv. cyamopsidis,NZ_CP167211.1,unknown,51386,1.0,0.0,0.0,0.0
+GCF_002953955.1,Corynebacterium pseudotuberculosis,NZ_CP026524.1,unknown,2337541,1.0,0.0,0.0,0.0
+GCF_046529115.1,Klebsiella pneumoniae,NZ_CP160495.1,unknown,5409513,1.0,0.0,0.0,0.0
+GCF_046529115.1,Klebsiella pneumoniae,NZ_CP160496.1,unknown,299930,1.0,0.0,0.0,0.0
+GCF_046529115.1,Klebsiella pneumoniae,NZ_CP160497.1,unknown,55263,1.0,0.0,0.0,0.0
+GCF_046529115.1,Klebsiella pneumoniae,NZ_CP160498.1,unknown,39710,1.0,0.0,0.0,0.0
+GCF_046742005.1,Staphylococcus aureus,NZ_CP123142.1,unknown,2772116,1.0,0.0,0.0,0.0
+GCF_046742005.1,Staphylococcus aureus,NZ_CP123143.1,unknown,27268,1.0,0.0,0.0,0.0
+GCF_045209705.1,Streptomyces griseus,NZ_CP109279.1,unknown,8315763,1.0,0.0,0.0,0.0
+GCF_049949155.1,Spiroplasma endosymbiont of Glossina fuscipes fuscipes,NZ_CP188113.1,unknown,1418152,1.0,0.0,0.0,0.0
+GCF_049949155.1,Spiroplasma endosymbiont of Glossina fuscipes fuscipes,NZ_CP188112.1,unknown,16375,1.0,0.0,0.0,0.0
+GCF_049949155.1,Spiroplasma endosymbiont of Glossina fuscipes fuscipes,NZ_CP188114.1,unknown,12717,1.0,0.0,0.0,0.0
+GCF_049949155.1,Spiroplasma endosymbiont of Glossina fuscipes fuscipes,NZ_CP188115.1,unknown,6460,1.0,0.0,0.0,0.0
+GCF_046619575.1,Klebsiella pneumoniae,NZ_CP176888.1,unknown,5453196,1.0,0.0,0.0,0.0
+GCF_046619575.1,Klebsiella pneumoniae,NZ_CP176889.1,unknown,223399,1.0,0.0,0.0,0.0
+GCF_964026865.1,Wolbachia endosymbiont (group A) of Clivina fossor,NZ_OZ034707.1,unknown,1766692,1.0,0.0,0.0,0.0
+GCF_050428545.1,Enterococcus faecalis,NZ_CP191305.1,unknown,3014988,1.0,0.0,0.0,0.0
+GCF_050428545.1,Enterococcus faecalis,NZ_CP191306.1,unknown,71942,1.0,0.0,0.0,0.0
+GCF_050428545.1,Enterococcus faecalis,NZ_CP191307.1,unknown,60652,1.0,0.0,0.0,0.0
+GCF_050428545.1,Enterococcus faecalis,NZ_CP191308.1,unknown,31081,1.0,0.0,0.0,0.0
+GCF_047304505.1,Prochlorococcus sp. MIT 1318,NZ_CP138958.1,unknown,2609429,1.0,0.0,0.0,0.0
+GCF_022871025.1,Conchiformibius kuhniae,NZ_CP091521.1,unknown,2151969,1.0,0.0,0.0,0.0
+GCF_029773405.1,Aeromonas veronii,NZ_CP121846.1,unknown,4536836,1.0,0.0,0.0,0.0
+GCF_048833675.1,Bacillus cereus,NZ_CP184769.1,unknown,5355367,1.0,0.0,0.0,0.0
+GCF_016127215.1,Haemophilus parainfluenzae,NZ_CP065991.1,unknown,2141704,1.0,0.0,0.0,0.0
+GCF_013349045.1,Klebsiella pneumoniae,NZ_CP054768.1,unknown,5447537,1.0,0.0,0.0,0.0
+GCF_013349045.1,Klebsiella pneumoniae,NZ_CP054769.1,unknown,195034,1.0,0.0,0.0,0.0
+GCF_013349045.1,Klebsiella pneumoniae,NZ_CP054770.1,unknown,133772,1.0,0.0,0.0,0.0
+GCF_013349045.1,Klebsiella pneumoniae,NZ_CP054771.1,unknown,87095,1.0,0.0,0.0,0.0
+GCF_013349045.1,Klebsiella pneumoniae,NZ_CP054772.1,unknown,11970,1.0,0.0,0.0,0.0
+GCF_013349045.1,Klebsiella pneumoniae,NZ_CP054773.1,unknown,5596,1.0,0.0,0.0,0.0
+GCF_001679685.1,Pseudomonas aeruginosa,NZ_CP016214.1,unknown,6430493,1.0,0.0,0.0,0.0
+GCF_001679685.1,Pseudomonas aeruginosa,NZ_CP016215.1,unknown,423017,1.0,0.0,0.0,0.0
+GCF_039851965.1,Guptibacillus hwajinpoensis,NZ_CP156674.1,unknown,4060521,1.0,0.0,0.0,0.0
+GCF_039851965.1,Guptibacillus hwajinpoensis,NZ_CP156675.1,unknown,354787,1.0,0.0,0.0,0.0
+GCF_039851965.1,Guptibacillus hwajinpoensis,NZ_CP156676.1,unknown,16075,1.0,0.0,0.0,0.0
+GCF_000750335.1,Salmonella enterica subsp. enterica serovar Enteritidis,NZ_CP009092.1,unknown,4709890,1.0,0.0,0.0,0.0
+GCF_053667615.1,Vagococcus sp. JNUCC 83,NZ_CM132204.1,unknown,2472896,1.0,0.0,0.0,0.0
+GCF_053667615.1,Vagococcus sp. JNUCC 83,NZ_JBSJXX010000001.1,unknown,13918,1.0,0.0,0.0,0.0
+GCF_053667615.1,Vagococcus sp. JNUCC 83,NZ_JBSJXX010000003.1,unknown,15762,1.0,0.0,0.0,0.0
+GCF_053667615.1,Vagococcus sp. JNUCC 83,NZ_JBSJXX010000004.1,unknown,4126,1.0,0.0,0.0,0.0
+GCF_053667615.1,Vagococcus sp. JNUCC 83,NZ_JBSJXX010000005.1,unknown,5035,1.0,0.0,0.0,0.0
+GCF_053667615.1,Vagococcus sp. JNUCC 83,NZ_JBSJXX010000006.1,unknown,4863,1.0,0.0,0.0,0.0
+GCF_029371985.1,Bacillus velezensis,NZ_CP102603.1,unknown,3850373,1.0,0.0,0.0,0.0
+GCF_017164755.1,Escherichia coli O157:H7,NZ_CP062778.1,unknown,5539376,1.0,0.0,0.0,0.0
+GCF_017164755.1,Escherichia coli O157:H7,NZ_CP062779.1,unknown,90783,1.0,0.0,0.0,0.0
+GCF_020162135.1,Zymomonas mobilis,NZ_CP083898.1,unknown,2058737,1.0,0.0,0.0,0.0
+GCF_020162135.1,Zymomonas mobilis,NZ_CP083902.1,unknown,32791,1.0,0.0,0.0,0.0
+GCF_020162135.1,Zymomonas mobilis,NZ_CP083901.1,unknown,33006,1.0,0.0,0.0,0.0
+GCF_020162135.1,Zymomonas mobilis,NZ_CP083900.1,unknown,36494,1.0,0.0,0.0,0.0
+GCF_020162135.1,Zymomonas mobilis,NZ_CP083899.1,unknown,43907,1.0,0.0,0.0,0.0
+GCF_000019725.1,Methylobacterium radiotolerans JCM 2831,NC_010505.1,unknown,6077833,1.0,0.0,0.0,0.0
+GCF_000019725.1,Methylobacterium radiotolerans JCM 2831,NC_010510.1,unknown,586164,1.0,0.0,0.0,0.0
+GCF_000019725.1,Methylobacterium radiotolerans JCM 2831,NC_010509.1,unknown,47003,1.0,0.0,0.0,0.0
+GCF_000019725.1,Methylobacterium radiotolerans JCM 2831,NC_010514.1,unknown,42985,1.0,0.0,0.0,0.0
+GCF_000019725.1,Methylobacterium radiotolerans JCM 2831,NC_010517.1,unknown,37743,1.0,0.0,0.0,0.0
+GCF_000019725.1,Methylobacterium radiotolerans JCM 2831,NC_010518.1,unknown,36410,1.0,0.0,0.0,0.0
+GCF_000019725.1,Methylobacterium radiotolerans JCM 2831,NC_010502.1,unknown,27836,1.0,0.0,0.0,0.0
+GCF_000019725.1,Methylobacterium radiotolerans JCM 2831,NC_010504.1,unknown,22114,1.0,0.0,0.0,0.0
+GCF_000019725.1,Methylobacterium radiotolerans JCM 2831,NC_010507.1,unknown,21022,1.0,0.0,0.0,0.0
+GCF_032598635.1,Pasteurella multocida,NZ_CP059703.1,unknown,2476550,1.0,0.0,0.0,0.0
+GCF_019456655.1,Mycolicibacterium diernhoferi,NZ_CP080332.1,unknown,5998503,1.0,0.0,0.0,0.0
+GCF_029277985.1,Providencia stuartii,NZ_CP119546.1,unknown,4396945,1.0,0.0,0.0,0.0
+GCF_029277985.1,Providencia stuartii,NZ_CP119547.1,unknown,207362,1.0,0.0,0.0,0.0
+GCF_029277985.1,Providencia stuartii,NZ_CP119551.1,unknown,2683,1.0,0.0,0.0,0.0
+GCF_029277985.1,Providencia stuartii,NZ_CP119550.1,unknown,3123,1.0,0.0,0.0,0.0
+GCF_029277985.1,Providencia stuartii,NZ_CP119549.1,unknown,3945,1.0,0.0,0.0,0.0
+GCF_029277985.1,Providencia stuartii,NZ_CP119548.1,unknown,8132,1.0,0.0,0.0,0.0
+GCF_001051625.3,Salmonella enterica subsp. enterica serovar Newport str. VA_R100804798,NZ_CP140750.2,unknown,4881897,1.0,0.0,0.0,0.0
+GCF_030534175.1,Staphylococcus aureus,NZ_CP130545.1,unknown,2735892,1.0,0.0,0.0,0.0
+GCF_030534175.1,Staphylococcus aureus,NZ_CP130546.1,unknown,42533,1.0,0.0,0.0,0.0
+GCF_000243075.1,Oceanimonas sp. GK1,NC_016745.1,unknown,3514537,1.0,0.0,0.0,0.0
+GCF_000243075.1,Oceanimonas sp. GK1,NC_016746.1,unknown,8462,1.0,0.0,0.0,0.0
+GCF_000243075.1,Oceanimonas sp. GK1,NC_016747.1,unknown,4245,1.0,0.0,0.0,0.0
+GCF_020683125.1,Erwinia rhapontici,NZ_CP085627.1,unknown,5057383,1.0,0.0,0.0,0.0
+GCF_020683125.1,Erwinia rhapontici,NZ_CP085628.1,unknown,107282,1.0,0.0,0.0,0.0
+GCF_025151215.1,Parabacteroides merdae ATCC 43184,NZ_CP102286.1,unknown,4377447,1.0,0.0,0.0,0.0
+GCF_050632345.1,Burkholderia contaminans,NZ_CP192563.1,unknown,3611841,1.0,0.0,0.0,0.0
+GCF_050632345.1,Burkholderia contaminans,NZ_CP192564.1,unknown,3146071,1.0,0.0,0.0,0.0
+GCF_050632345.1,Burkholderia contaminans,NZ_CP192565.1,unknown,1249576,1.0,0.0,0.0,0.0
+GCF_050632345.1,Burkholderia contaminans,NZ_CP192566.1,unknown,124465,1.0,0.0,0.0,0.0
+GCF_047302685.1,Enterobacter hormaechei subsp. xiangfangensis,NZ_CP129988.1,unknown,4728323,1.0,0.0,0.0,0.0
+GCF_047302685.1,Enterobacter hormaechei subsp. xiangfangensis,NZ_CP129991.1,unknown,106596,1.0,0.0,0.0,0.0
+GCF_047302685.1,Enterobacter hormaechei subsp. xiangfangensis,NZ_CP129989.1,unknown,301990,1.0,0.0,0.0,0.0
+GCF_047302685.1,Enterobacter hormaechei subsp. xiangfangensis,NZ_CP129990.1,unknown,274040,1.0,0.0,0.0,0.0
+GCF_013364155.1,Streptomyces sp. NA02950,NZ_CP054916.1,unknown,9619720,1.0,0.0,0.0,0.0
+GCF_013364155.1,Streptomyces sp. NA02950,NZ_CP054917.1,unknown,151949,1.0,0.0,0.0,0.0
+GCF_002356015.1,Mycobacterium tuberculosis,NZ_AP017901.1,unknown,4380602,1.0,0.0,0.0,0.0
+GCF_024760365.1,Mesomycoplasma hyorhinis,NZ_CP102736.1,unknown,844388,1.0,0.0,0.0,0.0
+GCF_002848365.2,Legionella sainthelensi,NZ_CP025491.2,unknown,4333322,1.0,0.0,0.0,0.0
+GCF_002848365.2,Legionella sainthelensi,NZ_CP025493.2,unknown,113526,1.0,0.0,0.0,0.0
+GCF_002848365.2,Legionella sainthelensi,NZ_CP025492.2,unknown,150432,1.0,0.0,0.0,0.0
+GCF_003408615.1,Klebsiella pneumoniae,NZ_CP031577.1,unknown,5242834,1.0,0.0,0.0,0.0
+GCF_003408615.1,Klebsiella pneumoniae,NZ_CP031582.1,unknown,206229,1.0,0.0,0.0,0.0
+GCF_003408615.1,Klebsiella pneumoniae,NZ_CP031584.1,unknown,164082,1.0,0.0,0.0,0.0
+GCF_003408615.1,Klebsiella pneumoniae,NZ_CP031578.1,unknown,60477,1.0,0.0,0.0,0.0
+GCF_003408615.1,Klebsiella pneumoniae,NZ_CP031579.1,unknown,44231,1.0,0.0,0.0,0.0
+GCF_003408615.1,Klebsiella pneumoniae,NZ_CP031580.1,unknown,86800,1.0,0.0,0.0,0.0
+GCF_003408615.1,Klebsiella pneumoniae,NZ_CP031581.1,unknown,71335,1.0,0.0,0.0,0.0
+GCF_003408615.1,Klebsiella pneumoniae,NZ_CP031583.1,unknown,198719,1.0,0.0,0.0,0.0
+GCF_048388455.1,Enterobacter hormaechei,NZ_CP183032.1,unknown,4890492,1.0,0.0,0.0,0.0
+GCF_048388455.1,Enterobacter hormaechei,NZ_CP183033.1,unknown,108022,1.0,0.0,0.0,0.0
+GCF_048388455.1,Enterobacter hormaechei,NZ_CP183034.1,unknown,46161,1.0,0.0,0.0,0.0
+GCF_004028015.1,Mycobacteroides abscessus,NZ_CP034181.1,unknown,5067231,1.0,0.0,0.0,0.0
+GCF_004028015.1,Mycobacteroides abscessus,NZ_CP034180.1,unknown,15203,1.0,0.0,0.0,0.0
+GCF_016025435.1,Salmonella enterica subsp. enterica serovar Albany,NZ_CP065572.1,unknown,4887211,1.0,0.0,0.0,0.0
+GCF_016025435.1,Salmonella enterica subsp. enterica serovar Albany,NZ_CP065573.1,unknown,84218,1.0,0.0,0.0,0.0
+GCF_018808925.1,Acinetobacter baumannii,NZ_CP048849.1,unknown,4173759,1.0,0.0,0.0,0.0
+GCF_018808925.1,Acinetobacter baumannii,NZ_CP048851.1,unknown,132632,1.0,0.0,0.0,0.0
+GCF_018808925.1,Acinetobacter baumannii,NZ_CP048850.1,unknown,2277,1.0,0.0,0.0,0.0
+GCF_001022135.1,Phytobacter ursingii,NZ_CP011602.1,unknown,5529134,1.0,0.0,0.0,0.0
+GCF_001022135.1,Phytobacter ursingii,NZ_CP011600.1,unknown,215092,1.0,0.0,0.0,0.0
+GCF_001022135.1,Phytobacter ursingii,NZ_CP011601.1,unknown,295619,1.0,0.0,0.0,0.0
+GCF_001022135.1,Phytobacter ursingii,NZ_CP011599.1,unknown,82986,1.0,0.0,0.0,0.0
+GCF_001022135.1,Phytobacter ursingii,NZ_CP011598.1,unknown,43621,1.0,0.0,0.0,0.0
+GCF_013167255.1,Escherichia coli O55:H7,NZ_CP038295.1,unknown,5219269,1.0,0.0,0.0,0.0
+GCF_013167255.1,Escherichia coli O55:H7,NZ_CP038296.1,unknown,5423,1.0,0.0,0.0,0.0
+GCF_013167255.1,Escherichia coli O55:H7,NZ_CP038297.1,unknown,6211,1.0,0.0,0.0,0.0
+GCF_013167255.1,Escherichia coli O55:H7,NZ_CP038298.1,unknown,66022,1.0,0.0,0.0,0.0
+GCF_013167255.1,Escherichia coli O55:H7,NZ_CP038299.1,unknown,70894,1.0,0.0,0.0,0.0
+GCF_009796745.1,Paraglaciecola sp. L1A13,NZ_CP047024.1,unknown,4965707,1.0,0.0,0.0,0.0
+GCF_050847325.1,Limosilactobacillus fermentum,NZ_CP193773.1,unknown,2102802,1.0,0.0,0.0,0.0
+GCF_050847325.1,Limosilactobacillus fermentum,NZ_CP193774.1,unknown,28377,1.0,0.0,0.0,0.0
+GCF_049544885.1,Mannheimia haemolytica,NZ_CP186707.1,unknown,2705086,1.0,0.0,0.0,0.0
+GCF_050627395.1,Paraburkholderia fungorum,NZ_CP192495.1,unknown,4729161,1.0,0.0,0.0,0.0
+GCF_050627395.1,Paraburkholderia fungorum,NZ_CP192496.1,unknown,3508453,1.0,0.0,0.0,0.0
+GCF_050627395.1,Paraburkholderia fungorum,NZ_CP192497.1,unknown,647572,1.0,0.0,0.0,0.0
+GCF_050627395.1,Paraburkholderia fungorum,NZ_CP192494.1,unknown,437225,1.0,0.0,0.0,0.0
+GCF_014168675.1,Escherichia coli,NZ_AP021933.1,unknown,4928821,1.0,0.0,0.0,0.0
+GCF_014168675.1,Escherichia coli,NZ_AP021934.1,unknown,105973,1.0,0.0,0.0,0.0
+GCF_052381035.1,Bacillus spizizenii ATCC 6633 = JCM 2499,NZ_CM126354.1,unknown,4045594,1.0,0.0,0.0,0.0
+GCF_052381035.1,Bacillus spizizenii ATCC 6633 = JCM 2499,NZ_JBQSYZ010000002.1,unknown,5017,1.0,0.0,0.0,0.0
+GCF_009884375.1,Salmonella enterica subsp. enterica serovar Typhimurium,NZ_CP041976.1,unknown,4957978,1.0,0.0,0.0,0.0
+GCF_009884375.1,Salmonella enterica subsp. enterica serovar Typhimurium,NZ_CP041974.1,unknown,113858,1.0,0.0,0.0,0.0
+GCF_009884375.1,Salmonella enterica subsp. enterica serovar Typhimurium,NZ_CP041975.1,unknown,19388,1.0,0.0,0.0,0.0
+GCF_001663755.1,Loigolactobacillus backii,NZ_CP014899.1,unknown,2664097,1.0,0.0,0.0,0.0
+GCF_001663755.1,Loigolactobacillus backii,NZ_CP014900.1,unknown,28997,1.0,0.0,0.0,0.0
+GCF_001663755.1,Loigolactobacillus backii,NZ_CP014901.1,unknown,22560,1.0,0.0,0.0,0.0
+GCF_001663755.1,Loigolactobacillus backii,NZ_CP014902.1,unknown,11878,1.0,0.0,0.0,0.0
+GCF_001663755.1,Loigolactobacillus backii,NZ_CP014903.1,unknown,65694,1.0,0.0,0.0,0.0
+GCF_001663755.1,Loigolactobacillus backii,NZ_CP014904.1,unknown,33270,1.0,0.0,0.0,0.0
+GCF_001663755.1,Loigolactobacillus backii,NZ_CP014905.1,unknown,12076,1.0,0.0,0.0,0.0
+GCF_001663755.1,Loigolactobacillus backii,NZ_CP014906.1,unknown,7031,1.0,0.0,0.0,0.0
+GCF_006874725.1,Klebsiella aerogenes,NZ_CP035466.1,unknown,5062651,1.0,0.0,0.0,0.0
+GCF_030229125.2,Corynebacterium rhinophilum,NZ_CP176019.1,unknown,2532556,1.0,0.0,0.0,0.0
+GCF_030229125.2,Corynebacterium rhinophilum,NZ_CP176020.1,unknown,56170,1.0,0.0,0.0,0.0
+GCF_030229125.2,Corynebacterium rhinophilum,NZ_CP176021.1,unknown,10572,1.0,0.0,0.0,0.0
+GCF_020809045.1,Pseudarthrobacter sp. L1SW,NZ_CP078079.1,unknown,4096555,1.0,0.0,0.0,0.0
+GCF_000340925.1,Candidatus Kinetoplastidibacterium blastocrithidiae TCC012E,NC_020285.1,unknown,820029,1.0,0.0,0.0,0.0
+GCF_044813255.1,Klebsiella pneumoniae,NZ_CP171651.1,unknown,5394489,1.0,0.0,0.0,0.0
+GCF_044813255.1,Klebsiella pneumoniae,NZ_CP171652.1,unknown,236308,1.0,0.0,0.0,0.0
+GCF_003403135.1,Dickeya dianthicola,NZ_CP031560.1,unknown,4909058,1.0,0.0,0.0,0.0
+GCF_036936505.1,Enterobacter sp. JJBC,NZ_CP136935.1,unknown,4854432,1.0,0.0,0.0,0.0
+GCF_036936505.1,Enterobacter sp. JJBC,NZ_CP136936.1,unknown,87769,1.0,0.0,0.0,0.0
+GCF_036936505.1,Enterobacter sp. JJBC,NZ_CP136937.1,unknown,82397,1.0,0.0,0.0,0.0
+GCF_036936505.1,Enterobacter sp. JJBC,NZ_CP136938.1,unknown,64969,1.0,0.0,0.0,0.0
+GCF_036936505.1,Enterobacter sp. JJBC,NZ_CP136939.1,unknown,53743,1.0,0.0,0.0,0.0
+GCF_004847545.1,Salmonella enterica subsp. enterica serovar Bareilly str. CFSAN000970,NZ_CP039471.1,unknown,4726554,1.0,0.0,0.0,0.0
+GCF_004847545.1,Salmonella enterica subsp. enterica serovar Bareilly str. CFSAN000970,NZ_CP039472.1,unknown,81911,1.0,0.0,0.0,0.0
+GCF_002761575.1,Acinetobacter baumannii,NZ_CP024124.1,unknown,3991735,1.0,0.0,0.0,0.0
+GCF_002761575.1,Acinetobacter baumannii,NZ_CP024125.1,unknown,110967,1.0,0.0,0.0,0.0
+GCF_003061265.1,Pasteurella multocida,NZ_CP028926.1,unknown,2277636,1.0,0.0,0.0,0.0
+GCF_002895385.1,Staphylococcus aureus,NZ_CP018629.1,unknown,3095697,1.0,0.0,0.0,0.0
+GCF_042604715.1,Mannheimia haemolytica,NZ_CP169311.1,unknown,2524802,1.0,0.0,0.0,0.0
+GCF_000023705.1,Methylotenera mobilis JLW8,NC_012968.1,unknown,2547570,1.0,0.0,0.0,0.0
+GCF_016725245.1,Mammaliicoccus vitulinus,NZ_CP068061.1,unknown,2539090,1.0,0.0,0.0,0.0
+GCF_016725245.1,Mammaliicoccus vitulinus,NZ_CP068062.1,unknown,4440,1.0,0.0,0.0,0.0
+GCF_016027975.1,Lactococcus lactis,NZ_CP065702.1,unknown,2402617,1.0,0.0,0.0,0.0
+GCF_016027975.1,Lactococcus lactis,NZ_CP065701.1,unknown,26712,1.0,0.0,0.0,0.0
+GCF_016027975.1,Lactococcus lactis,NZ_CP065703.1,unknown,58281,1.0,0.0,0.0,0.0
+GCF_016027975.1,Lactococcus lactis,NZ_CP065704.1,unknown,72776,1.0,0.0,0.0,0.0
+GCF_016027975.1,Lactococcus lactis,NZ_CP065705.1,unknown,22593,1.0,0.0,0.0,0.0
+GCF_018326065.1,Pseudomonas sp. Ost2,NZ_AP021904.1,unknown,7357961,1.0,0.0,0.0,0.0
+GCF_009913315.1,Bacillus velezensis,NZ_CP028205.1,unknown,4018059,1.0,0.0,0.0,0.0
+GCF_001620005.1,Rhodococcoides fascians,NZ_CP015220.1,unknown,5179353,1.0,0.0,0.0,0.0
+GCF_001620005.1,Rhodococcoides fascians,NZ_CP015221.1,unknown,137595,1.0,0.0,0.0,0.0
+GCF_048282615.1,Lacticaseibacillus paracasei,NZ_CP182492.1,unknown,3052141,1.0,0.0,0.0,0.0
+GCF_003704305.1,Pantoea agglomerans,NZ_CP031649.1,unknown,4128817,1.0,0.0,0.0,0.0
+GCF_003704305.1,Pantoea agglomerans,NZ_CP031650.1,unknown,520959,1.0,0.0,0.0,0.0
+GCF_003704305.1,Pantoea agglomerans,NZ_CP031651.1,unknown,182169,1.0,0.0,0.0,0.0
+GCF_003704305.1,Pantoea agglomerans,NZ_CP031652.1,unknown,152523,1.0,0.0,0.0,0.0
+GCF_002982095.1,Salmonella enterica subsp. enterica serovar Enteritidis,NZ_CP019681.1,unknown,4685718,1.0,0.0,0.0,0.0
+GCF_046531165.1,Klebsiella pneumoniae,NZ_CP145324.1,unknown,5418617,1.0,0.0,0.0,0.0
+GCF_046531165.1,Klebsiella pneumoniae,NZ_CP145329.1,unknown,55269,1.0,0.0,0.0,0.0
+GCF_046531165.1,Klebsiella pneumoniae,NZ_CP145328.1,unknown,39700,1.0,0.0,0.0,0.0
+GCF_046531165.1,Klebsiella pneumoniae,NZ_CP145327.1,unknown,29543,1.0,0.0,0.0,0.0
+GCF_046531165.1,Klebsiella pneumoniae,NZ_CP145325.1,unknown,338015,1.0,0.0,0.0,0.0
+GCF_046531165.1,Klebsiella pneumoniae,NZ_CP145326.1,unknown,21072,1.0,0.0,0.0,0.0
+GCF_038431825.1,Haemophilus influenzae,NZ_CP131719.1,unknown,2019110,1.0,0.0,0.0,0.0
+GCF_036865815.1,Erwinia aphidicola,NZ_CP142254.1,unknown,4518863,1.0,0.0,0.0,0.0
+GCF_051053615.1,Mycoplasma capricolum subsp. capricolum,NZ_CP144012.1,unknown,993557,1.0,0.0,0.0,0.0
+GCF_024628805.1,Paenimyroides aestuarii,NZ_CP102382.1,unknown,2961016,1.0,0.0,0.0,0.0
+GCF_009708215.1,Occultella kanbiaonis,NZ_CP046175.1,unknown,5648255,1.0,0.0,0.0,0.0
+GCF_035621815.1,Escherichia coli,NZ_CP141840.1,unknown,4750399,1.0,0.0,0.0,0.0
+GCF_035621815.1,Escherichia coli,NZ_CP141843.1,unknown,47481,1.0,0.0,0.0,0.0
+GCF_035621815.1,Escherichia coli,NZ_CP141841.1,unknown,250595,1.0,0.0,0.0,0.0
+GCF_035621815.1,Escherichia coli,NZ_CP141842.1,unknown,115583,1.0,0.0,0.0,0.0
+GCF_052400735.1,Salmonella enterica,NZ_CP194263.1,unknown,4841093,1.0,0.0,0.0,0.0
+GCF_052400735.1,Salmonella enterica,NZ_CP194264.1,unknown,63589,1.0,0.0,0.0,0.0
+GCF_052400735.1,Salmonella enterica,NZ_CP194265.1,unknown,5728,1.0,0.0,0.0,0.0
+GCF_052400735.1,Salmonella enterica,NZ_CP194266.1,unknown,2121,1.0,0.0,0.0,0.0
+GCF_052400735.1,Salmonella enterica,NZ_CP194267.1,unknown,1983,1.0,0.0,0.0,0.0
+GCF_012934475.1,Escherichia coli,NZ_CP051735.1,unknown,5050588,1.0,0.0,0.0,0.0
+GCF_012934475.1,Escherichia coli,NZ_CP051736.1,unknown,116897,1.0,0.0,0.0,0.0
+GCF_012934475.1,Escherichia coli,NZ_CP051737.1,unknown,71625,1.0,0.0,0.0,0.0
+GCF_033396375.1,Pseudomonas putida,NZ_CP137700.1,unknown,6185269,1.0,0.0,0.0,0.0
+GCF_045038125.1,Ralstonia pseudosolanacearum,NZ_CP168737.1,unknown,3737374,1.0,0.0,0.0,0.0
+GCF_045038125.1,Ralstonia pseudosolanacearum,NZ_CP168738.1,unknown,2128303,1.0,0.0,0.0,0.0
+GCF_030489665.1,Lactococcus lactis subsp. lactis,NZ_CP129879.1,unknown,2517318,1.0,0.0,0.0,0.0
+GCF_030489665.1,Lactococcus lactis subsp. lactis,NZ_CP129880.1,unknown,58504,1.0,0.0,0.0,0.0
+GCF_001932775.1,Piscirickettsia salmonis,NZ_CP013773.1,unknown,3046533,1.0,0.0,0.0,0.0
+GCF_001932775.1,Piscirickettsia salmonis,NZ_CP013774.1,unknown,138636,1.0,0.0,0.0,0.0
+GCF_001932775.1,Piscirickettsia salmonis,NZ_CP013775.1,unknown,36081,1.0,0.0,0.0,0.0
+GCF_001932775.1,Piscirickettsia salmonis,NZ_CP013776.1,unknown,36245,1.0,0.0,0.0,0.0
+GCF_001932775.1,Piscirickettsia salmonis,NZ_CP013777.1,unknown,27962,1.0,0.0,0.0,0.0
+GCF_047837985.1,Neisseria sp. CCUG12390,NZ_CP181244.1,unknown,2557671,1.0,0.0,0.0,0.0
+GCF_041475645.1,Xanthomonas sp. NCPPB 3569,NZ_CP167847.1,unknown,5095546,1.0,0.0,0.0,0.0
+GCF_041475645.1,Xanthomonas sp. NCPPB 3569,NZ_CP167848.1,unknown,43934,1.0,0.0,0.0,0.0
+GCF_030053135.1,Rhizobium sp. BT04,NZ_CP125652.1,unknown,4676374,1.0,0.0,0.0,0.0
+GCF_030053135.1,Rhizobium sp. BT04,NZ_CP125649.1,unknown,199472,1.0,0.0,0.0,0.0
+GCF_030053135.1,Rhizobium sp. BT04,NZ_CP125648.1,unknown,216650,1.0,0.0,0.0,0.0
+GCF_030053135.1,Rhizobium sp. BT04,NZ_CP125647.1,unknown,274203,1.0,0.0,0.0,0.0
+GCF_030053135.1,Rhizobium sp. BT04,NZ_CP125650.1,unknown,422655,1.0,0.0,0.0,0.0
+GCF_030053135.1,Rhizobium sp. BT04,NZ_CP125653.1,unknown,540617,1.0,0.0,0.0,0.0
+GCF_030053135.1,Rhizobium sp. BT04,NZ_CP125651.1,unknown,659089,1.0,0.0,0.0,0.0
+GCF_021278945.1,Lactobacillus crispatus,NZ_CP061006.1,unknown,2321025,1.0,0.0,0.0,0.0
+GCF_001987215.1,Bordetella pertussis,NZ_CP011728.1,unknown,4110433,1.0,0.0,0.0,0.0
+GCF_022919095.1,Halobacillus salinarum,NZ_CP095073.1,unknown,4240228,1.0,0.0,0.0,0.0
+GCF_052923005.1,Escherichia coli,NZ_CM128675.1,unknown,4844626,1.0,0.0,0.0,0.0
+GCF_052923005.1,Escherichia coli,NZ_JBRETR010000001.1,unknown,1552,1.0,0.0,0.0,0.0
+GCF_052923005.1,Escherichia coli,NZ_JBRETR010000003.1,unknown,100602,1.0,0.0,0.0,0.0
+GCF_052923005.1,Escherichia coli,NZ_JBRETR010000004.1,unknown,3373,1.0,0.0,0.0,0.0
+GCF_976997275.1,Pseudomonas chlororaphis subsp. aureofaciens,NZ_OZ344922.1,unknown,6998720,1.0,0.0,0.0,0.0
+GCF_037976435.1,Bacillus sp. FSL K6-2841,NZ_CP150266.1,unknown,3668826,1.0,0.0,0.0,0.0
+GCF_014490825.1,Enterobacter roggenkampii,NZ_CP060733.1,unknown,4815629,1.0,0.0,0.0,0.0
+GCF_014490825.1,Enterobacter roggenkampii,NZ_CP060734.1,unknown,108025,1.0,0.0,0.0,0.0
+GCF_014490825.1,Enterobacter roggenkampii,NZ_CP060735.1,unknown,10483,1.0,0.0,0.0,0.0
+GCF_014490825.1,Enterobacter roggenkampii,NZ_CP060736.1,unknown,4569,1.0,0.0,0.0,0.0
+GCF_018987265.1,Rhizobium sp. WYJ-E13,NZ_CP076853.1,unknown,4350227,1.0,0.0,0.0,0.0
+GCF_018987265.1,Rhizobium sp. WYJ-E13,NZ_CP076854.1,unknown,2149667,1.0,0.0,0.0,0.0
+GCF_018987265.1,Rhizobium sp. WYJ-E13,NZ_CP076855.1,unknown,406180,1.0,0.0,0.0,0.0
+GCF_002257765.2,Klebsiella pneumoniae,NZ_CP036361.1,unknown,5444983,1.0,0.0,0.0,0.0
+GCF_002257765.2,Klebsiella pneumoniae,NZ_CP036363.1,unknown,54110,1.0,0.0,0.0,0.0
+GCF_002257765.2,Klebsiella pneumoniae,NZ_CP036364.1,unknown,5596,1.0,0.0,0.0,0.0
+GCF_002257765.2,Klebsiella pneumoniae,NZ_CP036362.1,unknown,120195,1.0,0.0,0.0,0.0
+GCF_047946865.1,Salmonella enterica subsp. enterica serovar Infantis,NZ_CP168217.1,unknown,4698954,1.0,0.0,0.0,0.0
+GCF_047946865.1,Salmonella enterica subsp. enterica serovar Infantis,NZ_CP168218.1,unknown,255759,1.0,0.0,0.0,0.0
+GCF_052039995.1,Mycoplasmopsis anatis,NZ_CP054878.1,unknown,1012697,1.0,0.0,0.0,0.0
+GCF_019434255.1,Klebsiella pneumoniae,NZ_CP080309.1,unknown,5472713,1.0,0.0,0.0,0.0
+GCF_019434255.1,Klebsiella pneumoniae,NZ_CP080313.1,unknown,31808,1.0,0.0,0.0,0.0
+GCF_019434255.1,Klebsiella pneumoniae,NZ_CP080315.1,unknown,5596,1.0,0.0,0.0,0.0
+GCF_019434255.1,Klebsiella pneumoniae,NZ_CP080311.1,unknown,128928,1.0,0.0,0.0,0.0
+GCF_019434255.1,Klebsiella pneumoniae,NZ_CP080310.1,unknown,188058,1.0,0.0,0.0,0.0
+GCF_019434255.1,Klebsiella pneumoniae,NZ_CP080314.1,unknown,11970,1.0,0.0,0.0,0.0
+GCF_019434255.1,Klebsiella pneumoniae,NZ_CP080312.1,unknown,80673,1.0,0.0,0.0,0.0
+GCF_028750655.1,Xanthomonas campestris pv. campestris,NZ_CP066990.1,unknown,4982561,1.0,0.0,0.0,0.0
+GCF_028750655.1,Xanthomonas campestris pv. campestris,NZ_CP066991.1,unknown,52591,1.0,0.0,0.0,0.0
+GCF_000280925.3,Pseudomyxococcus hansupus,NZ_CP012109.1,unknown,9490432,1.0,0.0,0.0,0.0
+GCF_900636555.1,Streptococcus gordonii,NZ_LR134291.1,unknown,2196660,1.0,0.0,0.0,0.0
+GCF_001697205.1,Neisseria meningitidis,NZ_CP012394.1,unknown,2206847,1.0,0.0,0.0,0.0
+GCF_052149035.1,Stenotrophomonas riyadhensis,NZ_CP197387.1,unknown,4846195,1.0,0.0,0.0,0.0
+GCF_034059795.1,Escherichia coli,NZ_CP139130.1,unknown,4711790,1.0,0.0,0.0,0.0
+GCF_034059795.1,Escherichia coli,NZ_CP139131.1,unknown,103087,1.0,0.0,0.0,0.0
+GCF_034059795.1,Escherichia coli,NZ_CP139132.1,unknown,4145,1.0,0.0,0.0,0.0
+GCF_034059795.1,Escherichia coli,NZ_CP139133.1,unknown,4072,1.0,0.0,0.0,0.0
+GCF_017298675.1,Serratia marcescens subsp. marcescens ATCC 13880,NZ_CP071188.1,unknown,5117328,1.0,0.0,0.0,0.0
+GCF_017298675.1,Serratia marcescens subsp. marcescens ATCC 13880,NZ_CP071189.1,unknown,43189,1.0,0.0,0.0,0.0
+GCF_032278865.1,Bordetella pertussis,NZ_CP118341.1,unknown,4270955,1.0,0.0,0.0,0.0
+GCF_027912675.1,Paracoccus sp. SCSIO 75233,NZ_CP115757.1,unknown,3267188,1.0,0.0,0.0,0.0
+GCF_027912675.1,Paracoccus sp. SCSIO 75233,NZ_CP115758.1,unknown,220952,1.0,0.0,0.0,0.0
+GCF_027912675.1,Paracoccus sp. SCSIO 75233,NZ_CP115760.1,unknown,142541,1.0,0.0,0.0,0.0
+GCF_027912675.1,Paracoccus sp. SCSIO 75233,NZ_CP115761.1,unknown,72967,1.0,0.0,0.0,0.0
+GCF_027912675.1,Paracoccus sp. SCSIO 75233,NZ_CP115762.1,unknown,65815,1.0,0.0,0.0,0.0
+GCF_027912675.1,Paracoccus sp. SCSIO 75233,NZ_CP115763.1,unknown,28278,1.0,0.0,0.0,0.0
+GCF_027912675.1,Paracoccus sp. SCSIO 75233,NZ_CP115764.1,unknown,27517,1.0,0.0,0.0,0.0
+GCF_027912675.1,Paracoccus sp. SCSIO 75233,NZ_CP115765.1,unknown,23901,1.0,0.0,0.0,0.0
+GCF_027912675.1,Paracoccus sp. SCSIO 75233,NZ_CP115766.1,unknown,21341,1.0,0.0,0.0,0.0
+GCF_027912675.1,Paracoccus sp. SCSIO 75233,NZ_CP115767.1,unknown,17834,1.0,0.0,0.0,0.0
+GCF_027912675.1,Paracoccus sp. SCSIO 75233,NZ_CP115759.1,unknown,4217,1.0,0.0,0.0,0.0
+GCF_042017895.1,Escherichia coli str. K-12 substr. MG1655,NZ_CP169634.1,unknown,4628063,1.0,0.0,0.0,0.0
+GCF_038431885.1,Pseudomonas aeruginosa,NZ_CP131780.1,unknown,7128425,1.0,0.0,0.0,0.0
+GCF_029910075.1,Bradyrhizobium sp. ISRA463,NZ_CP094525.1,unknown,8463285,1.0,0.0,0.0,0.0
+GCF_025449195.1,Acinetobacter baumannii,NZ_CP104912.1,unknown,3951179,1.0,0.0,0.0,0.0
+GCF_025449195.1,Acinetobacter baumannii,NZ_CP104911.1,unknown,8731,1.0,0.0,0.0,0.0
+GCF_045999675.1,Legionella pneumophila,NZ_CP174238.1,unknown,3441651,1.0,0.0,0.0,0.0
+GCF_903992995.2,Salmonella enterica subsp. enterica serovar Typhimurium,NZ_LR862421.1,unknown,4881179,1.0,0.0,0.0,0.0
+GCF_050422935.1,Synechococcus elongatus M14.2,NZ_CP168031.1,unknown,2717027,1.0,0.0,0.0,0.0
+GCF_002028325.1,Pseudomonas veronii,NZ_CP018420.1,unknown,6852809,1.0,0.0,0.0,0.0
+GCF_030490615.1,Klebsiella pneumoniae,NZ_CP129849.1,unknown,5488009,1.0,0.0,0.0,0.0
+GCF_030490615.1,Klebsiella pneumoniae,NZ_CP129851.1,unknown,139648,1.0,0.0,0.0,0.0
+GCF_030490615.1,Klebsiella pneumoniae,NZ_CP129854.1,unknown,13379,1.0,0.0,0.0,0.0
+GCF_030490615.1,Klebsiella pneumoniae,NZ_CP129853.1,unknown,17898,1.0,0.0,0.0,0.0
+GCF_030490615.1,Klebsiella pneumoniae,NZ_CP129850.1,unknown,299491,1.0,0.0,0.0,0.0
+GCF_030490615.1,Klebsiella pneumoniae,NZ_CP129852.1,unknown,86081,1.0,0.0,0.0,0.0
+GCF_042141115.1,Acinetobacter baumannii,NZ_CP169795.1,unknown,3914702,1.0,0.0,0.0,0.0
+GCF_042141115.1,Acinetobacter baumannii,NZ_CP169796.1,unknown,17003,1.0,0.0,0.0,0.0
+GCF_042141115.1,Acinetobacter baumannii,NZ_CP169797.1,unknown,16698,1.0,0.0,0.0,0.0
+GCF_013374335.1,Escherichia coli,NZ_AP023237.1,unknown,4873850,1.0,0.0,0.0,0.0
+GCF_013374335.1,Escherichia coli,NZ_AP023238.1,unknown,93649,1.0,0.0,0.0,0.0
+GCF_015475935.1,Xylella fastidiosa subsp. multiplex,NZ_CP064325.1,unknown,2476446,1.0,0.0,0.0,0.0
+GCF_038593235.1,Bacillus sp. FSL W8-0502,NZ_CP151976.1,unknown,3726907,1.0,0.0,0.0,0.0
+GCF_037828885.1,"Salmonella enterica subsp. enterica serovar 4,[5],12:i:-",NZ_CP149175.1,unknown,4990971,1.0,0.0,0.0,0.0
+GCF_037828885.1,"Salmonella enterica subsp. enterica serovar 4,[5],12:i:-",NZ_CP149176.1,unknown,214434,1.0,0.0,0.0,0.0
+GCF_037828885.1,"Salmonella enterica subsp. enterica serovar 4,[5],12:i:-",NZ_CP149177.1,unknown,100887,1.0,0.0,0.0,0.0
+GCF_037828885.1,"Salmonella enterica subsp. enterica serovar 4,[5],12:i:-",NZ_CP149178.1,unknown,4473,1.0,0.0,0.0,0.0
+GCF_037477925.1,Neomoorella thermoacetica,NZ_CP136417.1,unknown,2751603,1.0,0.0,0.0,0.0
+GCF_024701375.2,Streptomyces sp. KMM 9044,NZ_CP113910.1,unknown,7317619,1.0,0.0,0.0,0.0
+GCF_024701375.2,Streptomyces sp. KMM 9044,NZ_CP113911.1,unknown,7437,1.0,0.0,0.0,0.0
+GCF_024701375.2,Streptomyces sp. KMM 9044,NZ_CP113912.1,unknown,108853,1.0,0.0,0.0,0.0
+GCF_025159075.1,Riemerella anatipestifer,NZ_CP104076.1,unknown,2133658,1.0,0.0,0.0,0.0
+GCF_048564955.1,Xylella fastidiosa,NZ_CP183396.1,unknown,2614665,1.0,0.0,0.0,0.0
+GCF_040208325.1,Rhodanobacter sp. IGA1.0,NZ_CP157948.1,unknown,3795961,1.0,0.0,0.0,0.0
+GCF_052497835.1,Robiginitalea sp. IMCC44478,NZ_CP199296.1,unknown,3300668,1.0,0.0,0.0,0.0
+GCF_013201055.1,Enterococcus faecium,NZ_CP053704.1,unknown,2685395,1.0,0.0,0.0,0.0
+GCF_031583005.1,Pasteurella multocida,NZ_CP134046.1,unknown,2347109,1.0,0.0,0.0,0.0
+GCF_013391805.1,Galbibacter sp. BG1,NZ_CP058364.1,unknown,3708790,1.0,0.0,0.0,0.0
+GCF_013167655.1,Escherichia coli O157:H7 str. F8092B,NZ_CP038355.1,unknown,5520652,1.0,0.0,0.0,0.0
+GCF_013167655.1,Escherichia coli O157:H7 str. F8092B,NZ_CP038356.1,unknown,98062,1.0,0.0,0.0,0.0
+GCF_045277525.1,Trueperella pyogenes,NZ_CP123427.1,unknown,2319272,1.0,0.0,0.0,0.0
+GCF_051984495.1,Stenotrophomonas maltophilia,NZ_CP196981.1,unknown,4965831,1.0,0.0,0.0,0.0
+GCF_040822065.1,Pedobacter sp. WC2423,NZ_CP162005.1,unknown,5978383,1.0,0.0,0.0,0.0
+GCF_029854575.1,Klebsiella pneumoniae,NZ_CP123040.1,unknown,5378389,1.0,0.0,0.0,0.0
+GCF_029854575.1,Klebsiella pneumoniae,NZ_CP123041.1,unknown,118619,1.0,0.0,0.0,0.0
+GCF_029854575.1,Klebsiella pneumoniae,NZ_CP123042.1,unknown,9030,1.0,0.0,0.0,0.0
+GCF_002240155.1,Mycobacterium intracellulare subsp. chimaera,NZ_CP022223.1,unknown,5891614,1.0,0.0,0.0,0.0
+GCF_002240155.1,Mycobacterium intracellulare subsp. chimaera,NZ_CP022224.1,unknown,33560,1.0,0.0,0.0,0.0
+GCF_002240155.1,Mycobacterium intracellulare subsp. chimaera,NZ_CP022225.1,unknown,13458,1.0,0.0,0.0,0.0
+GCF_003390995.1,Cutibacterium acnes,NZ_CP031442.1,unknown,2560321,1.0,0.0,0.0,0.0
+GCF_042159195.1,Pseudomonas putida KT2440,NZ_CP169744.1,unknown,6185132,1.0,0.0,0.0,0.0
+GCF_051244865.1,Enterococcus faecium,NZ_CP195298.1,unknown,2728138,1.0,0.0,0.0,0.0
+GCF_051244865.1,Enterococcus faecium,NZ_CP195299.1,unknown,57031,1.0,0.0,0.0,0.0
+GCF_051244865.1,Enterococcus faecium,NZ_CP195300.1,unknown,35582,1.0,0.0,0.0,0.0
+GCF_051244865.1,Enterococcus faecium,NZ_CP195301.1,unknown,6438,1.0,0.0,0.0,0.0
+GCF_051244865.1,Enterococcus faecium,NZ_CP195302.1,unknown,1979,1.0,0.0,0.0,0.0
+GCF_046895765.1,Yersinia pestis,NZ_CP177874.1,unknown,4631336,1.0,0.0,0.0,0.0
+GCF_046895765.1,Yersinia pestis,NZ_CP177876.1,unknown,68542,1.0,0.0,0.0,0.0
+GCF_046895765.1,Yersinia pestis,NZ_CP177877.1,unknown,100989,1.0,0.0,0.0,0.0
+GCF_046895765.1,Yersinia pestis,NZ_CP177875.1,unknown,9610,1.0,0.0,0.0,0.0
+GCF_002734145.1,Faecalibacterium duncaniae,NZ_CP022479.1,unknown,3110044,1.0,0.0,0.0,0.0
+GCF_021089875.1,Escherichia coli,NZ_CP087570.1,unknown,4755648,1.0,0.0,0.0,0.0
+GCF_021089875.1,Escherichia coli,NZ_CP087571.1,unknown,151915,1.0,0.0,0.0,0.0
+GCF_021089875.1,Escherichia coli,NZ_CP087572.1,unknown,46160,1.0,0.0,0.0,0.0
+GCF_030848285.1,Akkermansia muciniphila,NZ_CP114597.1,unknown,2742000,1.0,0.0,0.0,0.0
+GCF_001029835.1,Neisseria meningitidis M0579,NZ_CP007668.1,unknown,2324822,1.0,0.0,0.0,0.0
+GCF_034377145.1,Sulfitobacter sp. OXR-159,NZ_CP139707.1,unknown,3512771,1.0,0.0,0.0,0.0
+GCF_034377145.1,Sulfitobacter sp. OXR-159,NZ_CP139708.1,unknown,235959,1.0,0.0,0.0,0.0
+GCF_034377145.1,Sulfitobacter sp. OXR-159,NZ_CP139709.1,unknown,191538,1.0,0.0,0.0,0.0
+GCF_034377145.1,Sulfitobacter sp. OXR-159,NZ_CP139710.1,unknown,175244,1.0,0.0,0.0,0.0
+GCF_034377145.1,Sulfitobacter sp. OXR-159,NZ_CP139711.1,unknown,133783,1.0,0.0,0.0,0.0
+GCF_034377145.1,Sulfitobacter sp. OXR-159,NZ_CP139712.1,unknown,89080,1.0,0.0,0.0,0.0
+GCF_034377145.1,Sulfitobacter sp. OXR-159,NZ_CP139713.1,unknown,48252,1.0,0.0,0.0,0.0
+GCF_034377145.1,Sulfitobacter sp. OXR-159,NZ_CP139714.1,unknown,35426,1.0,0.0,0.0,0.0
+GCF_029962165.1,Pseudomonas aeruginosa,NZ_CP124658.1,unknown,6943341,1.0,0.0,0.0,0.0
+GCF_029962165.1,Pseudomonas aeruginosa,NZ_CP124659.1,unknown,526642,1.0,0.0,0.0,0.0
+GCF_045278625.1,Acinetobacter baumannii,NZ_CP137075.1,unknown,3849243,1.0,0.0,0.0,0.0
+GCF_045278625.1,Acinetobacter baumannii,NZ_CP137076.1,unknown,69524,1.0,0.0,0.0,0.0
+GCF_053643315.1,Bacillus velezensis,NZ_CM132189.1,unknown,3937923,1.0,0.0,0.0,0.0
+GCF_025946805.1,Lactobacillus delbrueckii,NZ_CP109946.1,unknown,2076116,1.0,0.0,0.0,0.0
+GCF_014353055.1,Amniculibacterium sp. G2-70,NZ_CP060698.1,unknown,2823139,1.0,0.0,0.0,0.0
+GCF_014353055.1,Amniculibacterium sp. G2-70,NZ_CP060699.1,unknown,16106,1.0,0.0,0.0,0.0
+GCF_001559055.1,Bordetella bronchiseptica,NZ_CP014013.1,unknown,5339230,1.0,0.0,0.0,0.0
+GCF_002849795.1,Prevotella jejuni,NZ_CP023863.1,unknown,2204592,1.0,0.0,0.0,0.0
+GCF_002849795.1,Prevotella jejuni,NZ_CP023864.1,unknown,1708414,1.0,0.0,0.0,0.0
+GCF_004636365.1,Bordetella pertussis,NZ_CP026666.1,unknown,4106495,1.0,0.0,0.0,0.0
+GCF_003054475.1,Nodularia spumigena UHCC 0039,NZ_CP020114.1,unknown,5294286,1.0,0.0,0.0,0.0
+GCF_003054475.1,Nodularia spumigena UHCC 0039,NZ_CP020115.1,unknown,92326,1.0,0.0,0.0,0.0
+GCF_013343135.1,Achromobacter xylosoxidans,NZ_CP054571.1,unknown,6806438,1.0,0.0,0.0,0.0
+GCF_038024965.1,Candidatus Phytoplasma fraxini,NZ_CP146843.1,unknown,598519,1.0,0.0,0.0,0.0

@@ -2,8 +2,8 @@
 
 ## Dataset Summary
 
-- **N assemblies**: 3
-- **N replicons**: 9
+- **N assemblies**: 200
+- **N replicons**: 461
 - **Chromosomes**: 0
 - **Plasmids**: 0
 
@@ -24,4 +24,4 @@ An orbit ratio near 1.0 indicates the sequence has no dihedral symmetry (all rot
 - RC-fixed fraction: Proportion of windows equal to their reverse complement
 
 ---
-*Generated: 2025-12-14T18:58:22.695*
+*Generated: 2025-12-14T19:11:58.793*

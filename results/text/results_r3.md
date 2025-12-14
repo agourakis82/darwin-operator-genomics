@@ -2,8 +2,8 @@
 
 ## Experimental Setup
 
-- **N chains**: 500 (400 train, 100 test)
-- **Chain length**: 30 operators
+- **N chains**: 1000 (800 train, 200 test)
+- **Chain length**: 50 operators
 - **Seed**: 42
 
 ## Results
@@ -13,16 +13,16 @@
 | Model | Accuracy | Perplexity |
 |-------|----------|------------|
 | Markov(1) | 20.6% | 5.0 |
-| Markov(2) | 19.7% | 5.02 |
-| Quaternion | 20.1% | 5.01 |
+| Markov(2) | 20.2% | 5.01 |
+| Quaternion | 19.5% | 5.04 |
 
 ### Semigroup Case (With Indels: D, I, V)
 
 | Model | Accuracy | Perplexity |
 |-------|----------|------------|
-| Markov(1) | 13.1% | 8.02 |
-| Markov(2) | 12.8% | 8.2 |
-| Quaternion | 11.9% | 8.05 |
+| Markov(1) | 11.9% | 8.01 |
+| Markov(2) | 12.6% | 8.05 |
+| Quaternion | 12.3% | 8.02 |
 
 ## Interpretation
 
@@ -41,4 +41,4 @@ This negative result is preserved for scientific completeness. Future work could
 - Alternative algebraic representations (Clifford algebras, etc.)
 
 ---
-*Generated: 2025-12-14T18:59:36.146*
+*Generated: 2025-12-14T19:12:54.873*
