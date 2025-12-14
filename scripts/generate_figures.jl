@@ -273,6 +273,315 @@ function generate_fig2_symmetry_stats(results_dir::String, out_dir::String, form
     return fig
 end
 
+"""
+Generate Figure 4: K-mer Inversion Symmetry Analysis.
+"""
+function generate_fig4_kmer_symmetry(results_dir::String, out_dir::String, format::String)
+    kmer_path = joinpath(results_dir, "tables", "kmer_inversion_symmetry.csv")
+    by_k_path = joinpath(results_dir, "tables", "kmer_inversion_symmetry_by_k.csv")
+
+    if !isfile(kmer_path)
+        @warn "K-mer symmetry data not found: $kmer_path"
+        return nothing
+    end
+
+    kmer_df = CSV.read(kmer_path, DataFrame)
+    by_k_df = isfile(by_k_path) ? CSV.read(by_k_path, DataFrame) : nothing
+
+    fig = Figure(size=(1200, 800), fontsize=12)
+
+    Label(fig[0, 1:3], "K-mer Inversion Symmetry (Second Chargaff Parity)", fontsize=16, font=:bold)
+
+    # Panel A: X_k profile (mean across genomes)
+    ax1 = Axis(fig[1, 1],
+        xlabel="k",
+        ylabel="X_k (Inversion Score)",
+        title="(A) Mean X_k Profile")
+
+    if by_k_df !== nothing && nrow(by_k_df) > 0
+        k_values = sort(unique(by_k_df.k))
+        means = [mean(by_k_df[by_k_df.k .== k, :mean_X_k]) for k in k_values]
+        stds = [std(by_k_df[by_k_df.k .== k, :mean_X_k]) for k in k_values]
+
+        band!(ax1, k_values, means .- stds, means .+ stds, color=(:steelblue, 0.3))
+        scatterlines!(ax1, k_values, means, color=:steelblue, linewidth=2, markersize=8)
+
+        # Tolerance lines
+        hlines!(ax1, [0.1], color=:red, linestyle=:dash, label="τ = 0.1")
+        hlines!(ax1, [0.05], color=:orange, linestyle=:dot, label="τ = 0.05")
+        axislegend(ax1, position=:lt)
+    end
+
+    # Panel B: Distribution of symmetry limits
+    ax2 = Axis(fig[1, 2],
+        xlabel="K_L (Symmetry Limit, τ=0.1)",
+        ylabel="Count",
+        title="(B) Distribution of K_L")
+
+    if nrow(kmer_df) > 0 && "K_L_tau01" in names(kmer_df)
+        hist!(ax2, kmer_df.K_L_tau01, bins=20, color=(:steelblue, 0.7))
+    end
+
+    # Panel C: K_L vs genome length
+    ax3 = Axis(fig[1, 3],
+        xlabel="Replicon Length (Mbp)",
+        ylabel="K_L (τ=0.1)",
+        title="(C) Symmetry Limit vs Length",
+        xscale=log10)
+
+    if nrow(kmer_df) > 0 && "replicon_length" in names(kmer_df) && "K_L_tau01" in names(kmer_df)
+        scatter!(ax3, kmer_df.replicon_length ./ 1e6, kmer_df.K_L_tau01,
+            color=(:steelblue, 0.5), markersize=6)
+    end
+
+    # Panel D: X_1 distribution (base-level Chargaff)
+    ax4 = Axis(fig[2, 1],
+        xlabel="X_1 (Base-level)",
+        ylabel="Count",
+        title="(D) Base-Level Symmetry")
+
+    if nrow(kmer_df) > 0 && "X_1" in names(kmer_df)
+        hist!(ax4, filter(isfinite, kmer_df.X_1), bins=30, color=(:green, 0.7))
+        vlines!(ax4, [0.0], color=:red, linestyle=:dash, label="Perfect symmetry")
+        axislegend(ax4, position=:rt)
+    end
+
+    # Panel E: X_5 vs X_10
+    ax5 = Axis(fig[2, 2],
+        xlabel="X_5 (5-mer)",
+        ylabel="X_10 (10-mer)",
+        title="(E) Multi-Scale Symmetry")
+
+    if nrow(kmer_df) > 0 && "X_5" in names(kmer_df) && "X_10" in names(kmer_df)
+        valid = filter(row -> isfinite(row.X_5) && isfinite(row.X_10), kmer_df)
+        scatter!(ax5, valid.X_5, valid.X_10, color=(:steelblue, 0.5), markersize=6)
+        lines!(ax5, [0, 1], [0, 1], color=:gray, linestyle=:dash, label="y=x")
+        axislegend(ax5, position=:rb)
+    end
+
+    # Panel F: Summary text
+    ax6 = Axis(fig[2, 3], limits=(0, 1, 0, 1))
+    hidedecorations!(ax6)
+    hidespines!(ax6)
+
+    if nrow(kmer_df) > 0
+        median_K_L = "K_L_tau01" in names(kmer_df) ? round(median(kmer_df.K_L_tau01), digits=1) : "N/A"
+        summary = """
+        Summary Statistics:
+
+        N replicons: $(nrow(kmer_df))
+        Median K_L(τ=0.1): $median_K_L
+
+        K_L indicates the largest k where
+        k-mer counts satisfy approximate
+        Chargaff parity (X_k ≤ τ).
+        """
+        text!(ax6, 0.5, 0.5, text=summary, align=(:center, :center), fontsize=11)
+    end
+
+    filepath = joinpath(out_dir, "fig4_kmer_symmetry.$format")
+    save(filepath, fig)
+    println("Saved: $filepath")
+
+    return fig
+end
+
+"""
+Generate Figure 5: GC Skew and Replichore Analysis.
+"""
+function generate_fig5_gc_skew(results_dir::String, out_dir::String, format::String)
+    ori_ter_path = joinpath(results_dir, "tables", "gc_skew_ori_ter.csv")
+    replichore_path = joinpath(results_dir, "tables", "replichore_symmetry.csv")
+
+    if !isfile(ori_ter_path)
+        @warn "GC skew data not found: $ori_ter_path"
+        return nothing
+    end
+
+    ori_ter_df = CSV.read(ori_ter_path, DataFrame)
+    replichore_df = isfile(replichore_path) ? CSV.read(replichore_path, DataFrame) : nothing
+
+    fig = Figure(size=(1200, 800), fontsize=12)
+
+    Label(fig[0, 1:3], "GC Skew and Replichore Analysis", fontsize=16, font=:bold)
+
+    # Panel A: Confidence distribution
+    ax1 = Axis(fig[1, 1],
+        xlabel="Confidence Level",
+        ylabel="Count",
+        title="(A) Ori/Ter Estimation Confidence")
+
+    if nrow(ori_ter_df) > 0 && "confidence" in names(ori_ter_df)
+        conf_counts = combine(groupby(ori_ter_df, :confidence), nrow => :count)
+        conf_order = ["high", "medium", "low"]
+        colors = [:green, :orange, :red]
+
+        positions = Int[]
+        counts = Int[]
+        bar_colors = Symbol[]
+
+        for (i, c) in enumerate(conf_order)
+            row = filter(r -> r.confidence == c, conf_counts)
+            if nrow(row) > 0
+                push!(positions, i)
+                push!(counts, row[1, :count])
+                push!(bar_colors, colors[i])
+            end
+        end
+
+        barplot!(ax1, positions, counts, color=bar_colors)
+        ax1.xticks = (1:3, conf_order)
+    end
+
+    # Panel B: Skew amplitude distribution
+    ax2 = Axis(fig[1, 2],
+        xlabel="Skew Amplitude",
+        ylabel="Count",
+        title="(B) GC Skew Amplitude Distribution")
+
+    if nrow(ori_ter_df) > 0 && "skew_amplitude" in names(ori_ter_df)
+        hist!(ax2, filter(isfinite, ori_ter_df.skew_amplitude), bins=30, color=(:steelblue, 0.7))
+    end
+
+    # Panel C: Leading vs Lagging GC content
+    ax3 = Axis(fig[1, 3],
+        xlabel="Leading Strand GC",
+        ylabel="Lagging Strand GC",
+        title="(C) Replichore GC Content")
+
+    if nrow(ori_ter_df) > 0 && "leading_gc" in names(ori_ter_df)
+        scatter!(ax3, ori_ter_df.leading_gc, ori_ter_df.lagging_gc,
+            color=(:steelblue, 0.5), markersize=6)
+        lines!(ax3, [0.2, 0.8], [0.2, 0.8], color=:gray, linestyle=:dash)
+    end
+
+    # Panel D: Replichore X_5 comparison (if available)
+    ax4 = Axis(fig[2, 1],
+        xlabel="Replichore",
+        ylabel="X_5 (Inversion Score)",
+        title="(D) Leading vs Lagging Symmetry")
+
+    if replichore_df !== nothing && nrow(replichore_df) > 0 && "X_5" in names(replichore_df)
+        leading = filter(r -> r.replichore == "leading", replichore_df)
+        lagging = filter(r -> r.replichore == "lagging", replichore_df)
+
+        if nrow(leading) > 0 && nrow(lagging) > 0
+            violin!(ax4, fill(1, nrow(leading)), filter(isfinite, leading.X_5), color=(:steelblue, 0.7))
+            violin!(ax4, fill(2, nrow(lagging)), filter(isfinite, lagging.X_5), color=(:orange, 0.7))
+            ax4.xticks = ([1, 2], ["Leading", "Lagging"])
+        end
+    end
+
+    # Panel E: GC diff distribution
+    ax5 = Axis(fig[2, 2],
+        xlabel="GC Diff (Leading - Lagging)",
+        ylabel="Count",
+        title="(E) GC Content Asymmetry")
+
+    if nrow(ori_ter_df) > 0 && "gc_diff" in names(ori_ter_df)
+        hist!(ax5, filter(isfinite, ori_ter_df.gc_diff), bins=30, color=(:purple, 0.7))
+        vlines!(ax5, [0], color=:red, linestyle=:dash)
+    end
+
+    # Panel F: Summary
+    ax6 = Axis(fig[2, 3], limits=(0, 1, 0, 1))
+    hidedecorations!(ax6)
+    hidespines!(ax6)
+
+    if nrow(ori_ter_df) > 0
+        n_high = sum(ori_ter_df.confidence .== "high")
+        n_med = sum(ori_ter_df.confidence .== "medium")
+        summary = """
+        Summary:
+
+        Total replicons: $(nrow(ori_ter_df))
+        High confidence: $n_high
+        Medium confidence: $n_med
+
+        GC skew estimates replication
+        geometry (ori ≈ min, ter ≈ max
+        of cumulative skew).
+        """
+        text!(ax6, 0.5, 0.5, text=summary, align=(:center, :center), fontsize=11)
+    end
+
+    filepath = joinpath(out_dir, "fig5_gc_skew.$format")
+    save(filepath, fig)
+    println("Saved: $filepath")
+
+    return fig
+end
+
+"""
+Generate Figure 6: Inverted Repeats Enrichment.
+"""
+function generate_fig6_inverted_repeats(results_dir::String, out_dir::String, format::String)
+    ir_path = joinpath(results_dir, "tables", "ir_enrichment_summary.csv")
+
+    if !isfile(ir_path)
+        @warn "IR enrichment data not found: $ir_path"
+        return nothing
+    end
+
+    ir_df = CSV.read(ir_path, DataFrame)
+
+    fig = Figure(size=(1200, 600), fontsize=12)
+
+    Label(fig[0, 1:3], "Inverted Repeats Enrichment Analysis", fontsize=16, font=:bold)
+
+    # Panel A: Z-score distribution
+    ax1 = Axis(fig[1, 1],
+        xlabel="Z-score",
+        ylabel="Count",
+        title="(A) IR Enrichment Z-scores")
+
+    if nrow(ir_df) > 0 && "z_score" in names(ir_df)
+        valid_z = filter(isfinite, ir_df.z_score)
+        if !isempty(valid_z)
+            hist!(ax1, valid_z, bins=30, color=(:steelblue, 0.7))
+            vlines!(ax1, [2.0], color=:red, linestyle=:dash, label="z = 2")
+            vlines!(ax1, [0.0], color=:gray, linestyle=:dot, label="z = 0")
+            axislegend(ax1, position=:rt)
+        end
+    end
+
+    # Panel B: Enrichment ratio distribution
+    ax2 = Axis(fig[1, 2],
+        xlabel="Enrichment Ratio (Observed / Baseline)",
+        ylabel="Count",
+        title="(B) IR Enrichment Ratios")
+
+    if nrow(ir_df) > 0 && "enrichment_ratio" in names(ir_df)
+        valid_e = filter(x -> isfinite(x) && x < 10, ir_df.enrichment_ratio)
+        if !isempty(valid_e)
+            hist!(ax2, valid_e, bins=30, color=(:orange, 0.7))
+            vlines!(ax2, [1.0], color=:red, linestyle=:dash, label="No enrichment")
+            axislegend(ax2, position=:rt)
+        end
+    end
+
+    # Panel C: Observed vs Expected
+    ax3 = Axis(fig[1, 3],
+        xlabel="Baseline Mean",
+        ylabel="Observed Count",
+        title="(C) Observed vs Expected IR Count")
+
+    if nrow(ir_df) > 0 && "observed_ir_count" in names(ir_df) && "baseline_mean" in names(ir_df)
+        scatter!(ax3, ir_df.baseline_mean, ir_df.observed_ir_count,
+            color=(:steelblue, 0.5), markersize=5)
+        # Add y=x line
+        max_val = max(maximum(ir_df.baseline_mean), maximum(ir_df.observed_ir_count))
+        lines!(ax3, [0, max_val], [0, max_val], color=:gray, linestyle=:dash, label="y=x")
+        axislegend(ax3, position=:rb)
+    end
+
+    filepath = joinpath(out_dir, "fig6_inverted_repeats.$format")
+    save(filepath, fig)
+    println("Saved: $filepath")
+
+    return fig
+end
+
 function main()
     args = parse_args()
 
@@ -291,6 +600,20 @@ function main()
     # Figure 2: Symmetry statistics
     println("\nGenerating Figure 2: Symmetry statistics...")
     generate_fig2_symmetry_stats(results_dir, out_dir, format)
+
+    # Figure 4: K-mer symmetry (Figure 3 is generated by quaternion_test.jl)
+    println("\nGenerating Figure 4: K-mer inversion symmetry...")
+    generate_fig4_kmer_symmetry(results_dir, out_dir, format)
+
+    # Figure 5: GC skew
+    println("\nGenerating Figure 5: GC skew and replichore analysis...")
+    generate_fig5_gc_skew(results_dir, out_dir, format)
+
+    # Figure 6: Inverted repeats
+    println("\nGenerating Figure 6: Inverted repeats enrichment...")
+    generate_fig6_inverted_repeats(results_dir, out_dir, format)
+
+    # Note: Figure 7 (structured chains) is generated by analyze_structured_chains.jl
 
     println("\n=== Figures Complete ===")
 end

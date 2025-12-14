@@ -1,10 +1,13 @@
-.PHONY: setup fetch_data analyze analyze_approx figures paper test reproduce clean cleanall help zenodo_bundle
+.PHONY: setup fetch_data analyze analyze_approx analyze_kmer analyze_gc_skew analyze_ir analyze_structured figures paper test reproduce clean cleanall help zenodo_bundle
 
 JULIA := julia --project=.
 MAX ?= 200
 SEED ?= 42
 WINDOWS ?= 100,250,500,1000
 SAMPLES_PER_SIZE ?= 50
+KMAX ?= 10
+N_IR_SAMPLES ?= 5
+N_STRUCT_CHAINS ?= 500
 
 help:
 	@echo "Darwin Operator Genomics - Makefile targets"
@@ -13,6 +16,10 @@ help:
 	@echo "  fetch_data    Download NCBI bacterial genomes (MAX=$(MAX), SEED=$(SEED))"
 	@echo "  analyze       Run genome symmetry analysis (exact invariance)"
 	@echo "  analyze_approx Run approximate symmetry analysis (d_min/L)"
+	@echo "  analyze_kmer  Run k-mer inversion symmetry analysis"
+	@echo "  analyze_gc_skew Run GC skew and replichore analysis"
+	@echo "  analyze_ir    Run inverted repeats enrichment analysis"
+	@echo "  analyze_structured Run structured operator chains analysis"
 	@echo "  figures       Generate all publication figures"
 	@echo "  quaternion_test  Run quaternion/binary dihedral experiments"
 	@echo "  paper         Update paper assets from results"
@@ -39,7 +46,19 @@ analyze:
 analyze_approx: analyze
 	$(JULIA) scripts/analyze_approx_symmetry.jl --cache data/cache/ --out results/ --windows $(WINDOWS) --samples-per-size $(SAMPLES_PER_SIZE) --seed $(SEED)
 
-figures: analyze_approx
+analyze_kmer: analyze
+	$(JULIA) scripts/analyze_kmer_symmetry.jl --cache data/cache/ --out results/ --kmax $(KMAX) --seed $(SEED)
+
+analyze_gc_skew: analyze
+	$(JULIA) scripts/analyze_gc_skew.jl --cache data/cache/ --out results/ --kmax $(KMAX)
+
+analyze_ir: analyze
+	$(JULIA) scripts/analyze_inverted_repeats.jl --cache data/cache/ --out results/ --n-samples $(N_IR_SAMPLES) --seed $(SEED)
+
+analyze_structured:
+	$(JULIA) scripts/analyze_structured_chains.jl --out results/ --n-chains $(N_STRUCT_CHAINS) --seed $(SEED)
+
+figures: analyze_approx analyze_kmer analyze_gc_skew analyze_ir analyze_structured
 	$(JULIA) scripts/generate_figures.jl --results results/ --out results/figures/
 
 quaternion_test:
@@ -54,7 +73,7 @@ paper: figures quaternion_test
 test:
 	$(JULIA) test/runtests.jl
 
-reproduce: setup fetch_data analyze analyze_approx figures quaternion_test paper
+reproduce: setup fetch_data analyze analyze_approx analyze_kmer analyze_gc_skew analyze_ir analyze_structured figures quaternion_test paper
 	@echo ""
 	@echo "============================================"
 	@echo "Reproduction complete!"
@@ -63,6 +82,12 @@ reproduce: setup fetch_data analyze analyze_approx figures quaternion_test paper
 	@echo "Tables:  results/tables/"
 	@echo "Text:    results/text/"
 	@echo "Paper:   paper/figures/"
+	@echo ""
+	@echo "New vNext analyses:"
+	@echo "  - K-mer inversion symmetry (results_kmer_symmetry.md)"
+	@echo "  - GC skew & replichore (gc_skew_ori_ter.csv)"
+	@echo "  - Inverted repeats (ir_enrichment_summary.csv)"
+	@echo "  - Structured chains (structured_chains_summary.csv)"
 	@echo "============================================"
 
 zenodo_bundle:
