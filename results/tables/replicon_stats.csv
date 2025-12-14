@@ -1,0 +1,10 @@
+accession,organism,replicon_name,replicon_type,replicon_length,mean_orbit_ratio,palindrome_fraction,rc_fixed_fraction,shift_sym_fraction
+GCF_021397735.1,Vibrio harveyi,NZ_CP090179.1,unknown,3504760,1.0,0.0,0.0,0.0
+GCF_021397735.1,Vibrio harveyi,NZ_CP090178.1,unknown,2218060,1.0,0.0,0.0,0.0
+GCF_038449195.1,Bradyrhizobium ottawaense,NZ_CP150123.1,unknown,8595668,1.0,0.0,0.0,0.0
+GCF_038449195.1,Bradyrhizobium ottawaense,NZ_CP150124.1,unknown,361329,1.0,0.0,0.0,0.0
+GCF_011106775.1,Klebsiella pneumoniae,NZ_CP040033.1,unknown,5381963,1.0,0.0,0.0,0.0
+GCF_011106775.1,Klebsiella pneumoniae,NZ_CP040036.1,unknown,65499,1.0,0.0,0.0,0.0
+GCF_011106775.1,Klebsiella pneumoniae,NZ_CP040034.1,unknown,176345,1.0,0.0,0.0,0.0
+GCF_011106775.1,Klebsiella pneumoniae,NZ_CP040035.1,unknown,148625,1.0,0.0,0.0,0.0
+GCF_011106775.1,Klebsiella pneumoniae,NZ_CP040037.1,unknown,4938,1.0,0.0,0.0,0.0

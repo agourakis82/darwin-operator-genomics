@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Darwin Operator Genomics: Quaternionic Syntax of Genomic Evolution"
+version: 0.1.0
+date-released: 2024-12-14
+url: "https://github.com/Chiuratto-AI/darwin-operator-genomics"
+repository-code: "https://github.com/Chiuratto-AI/darwin-operator-genomics"
+license: MIT
+type: software
+authors:
+  - family-names: "Agourakis"
+    given-names: "Demetrios Chiuratto"
+    email: "demetrios@agourakis.med.br"
+    affiliation: "Independent Researcher"
+    orcid: ""
+keywords:
+  - genomics
+  - operator algebra
+  - quaternions
+  - bacterial genomes
+  - dihedral symmetry
+  - sequence analysis
+  - computational biology
+abstract: >-
+  Computational framework for analyzing genomic sequences through
+  the lens of operator algebras. Implements dihedral group actions
+  (shift, reverse, complement) on circular bacterial genomes and
+  tests quaternionic representations for evolutionary operators.
+references:
+  - type: software
+    title: "Demetrios Programming Language"
+    url: "https://github.com/Chiuratto-AI/demetrios"

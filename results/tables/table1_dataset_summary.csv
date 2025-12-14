@@ -1,0 +1,10 @@
+metric,value
+N assemblies,3
+N replicons analyzed,9
+N chromosomes,0
+N plasmids,0
+N unknown,9
+Mean replicon length (bp),2273021
+Median replicon length (bp),361329
+Min replicon length (bp),4938
+Max replicon length (bp),8595668

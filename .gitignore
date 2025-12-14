@@ -1,0 +1,35 @@
+# Data cache (do not commit raw genomes)
+data/cache/
+*.fna
+*.fna.gz
+*.fasta
+*.fasta.gz
+
+# Julia artifacts
+Manifest.toml
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+deps/deps.jl
+deps/build.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+tmp/
+*.tmp
+*.log
+
+# Generated results (keep figures/tables in git, but allow clean)
+# results/ is tracked, but large intermediate files are not
+*.arrow
+*.parquet
